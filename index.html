@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empleo · convocatorias y bolsas de informática</title>
+<style>
+:root{
+  --fondo:#f4f6f9; --superficie:#ffffff; --texto:#111827; --texto-suave:#4b5563;
+  --borde:#cbd5e1; --acento:#0b5cad; --acento-suave:#e8f0f9; --ok:#166534; --aviso:#92400e;
+  --error:#991b1b; --radio:12px;
+  --e1:4px; --e2:8px; --e3:12px; --e4:16px; --e5:24px; --e6:32px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);overflow-x:hidden;
+  font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+main{max-width:980px;margin:0 auto;padding:var(--e5) var(--e4)}
+header{border-bottom:1px solid var(--borde);padding-bottom:var(--e3);margin-bottom:var(--e5)}
+h1{font-size:1.5rem;line-height:1.25;margin:0 0 var(--e2)}
+h2{font-size:1.125rem;margin:0 0 var(--e3)}
+p{margin:0 0 var(--e2)}
+a{color:var(--acento)}
+button{font:inherit;color:inherit}
+select,button,a,summary{-webkit-tap-highlight-color:transparent}
+a:focus-visible,summary:focus-visible,button:focus-visible,select:focus-visible{
+  outline:3px solid var(--acento);outline-offset:2px;border-radius:6px}
+.meta{color:var(--texto-suave);font-size:.9375rem;margin:0}
+.calendario{display:flex;flex-wrap:wrap;align-items:center;gap:var(--e2);margin:var(--e3) 0 0}
+.boton-ics{display:inline-flex;align-items:center;min-height:44px;padding:0 var(--e3);
+  border:1px solid var(--acento);border-radius:var(--radio);color:var(--acento);
+  background:var(--superficie);font-weight:600;text-decoration:none}
+.nota-ics{color:var(--texto-suave);font-size:.8125rem}
+.calidad{background:var(--superficie);border:1px solid var(--borde);border-radius:var(--radio);
+  padding:var(--e4);margin:0 0 var(--e5)}
+.calidad h2{margin:0 0 var(--e3);font-size:1rem}
+.datos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--e3);
+  margin:0;padding:0}
+.dato{background:var(--fondo);border-radius:var(--radio);padding:var(--e2) var(--e3)}
+.dato dt{font-size:.75rem;letter-spacing:.02em;text-transform:uppercase;
+  color:var(--texto-suave);font-weight:600}
+.dato dd{margin:var(--e1) 0 0;font-size:1.25rem;font-weight:700;line-height:1.2}
+.aviso-ambar{border-left:4px solid #b45309;background:#fffbeb;color:#7c2d12;
+  padding:var(--e3);border-radius:var(--radio);margin:var(--e3) 0 0;font-weight:600}
+.filtros{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:var(--e3);
+  margin:0 0 var(--e5)}
+.campo{display:flex;flex-direction:column;gap:var(--e1);min-width:0}
+.campo label{font-size:.8125rem;letter-spacing:.02em;text-transform:uppercase;
+  color:var(--texto-suave);font-weight:600}
+.campo select{width:100%;min-width:0;min-height:44px;padding:0 var(--e3);border:1px solid var(--borde);
+  border-radius:var(--radio);background:var(--superficie);color:var(--texto);font:inherit}
+section{margin:0 0 var(--e6)}
+.fichas{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--e3);
+  margin:0;padding:0;list-style:none}
+.ficha{background:var(--superficie);border:1px solid var(--borde);border-radius:var(--radio);
+  padding:var(--e4);display:flex;flex-direction:column;gap:var(--e2);min-width:0}
+.ficha[hidden]{display:none}
+.ficha h3{font-size:1rem;margin:0;line-height:1.35;min-width:0}
+.titulo{display:flex;gap:var(--e1);align-items:flex-start;width:100%;min-height:44px;
+  margin:0;padding:0;border:0;background:none;text-align:left;cursor:pointer;min-width:0}
+.titulo-texto{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  min-width:0;overflow-wrap:anywhere}
+.titulo .flecha{flex:none;color:var(--texto-suave);font-size:.75rem;margin-top:.25em;
+  transition:transform 160ms ease}
+.titulo[aria-expanded="true"] .flecha{transform:rotate(180deg)}
+.ficha.titulo-abierto .titulo-texto{-webkit-line-clamp:unset;display:block;overflow:visible}
+.plazo-tipo{margin:0;font-weight:650;font-size:1rem}
+.organismo{margin:0;color:var(--texto-suave);font-size:.875rem}
+.acciones{margin:auto 0 0;padding-top:var(--e1)}
+.accion{display:inline-flex;align-items:center;justify-content:center;gap:var(--e1);
+  width:100%;min-height:44px;padding:0 var(--e4);border:1px solid var(--acento);
+  border-radius:var(--radio);background:var(--superficie);color:var(--acento);
+  font-weight:600;text-decoration:none}
+.accion:hover{background:var(--acento-suave)}
+.comprobado{margin:0;color:var(--texto-suave);font-size:.8125rem}
+.enlaces{margin:0;padding-left:var(--e4);font-size:.875rem;color:var(--texto-suave)}
+.enlaces li{margin:0 0 var(--e1)}
+.enlaces .no{color:var(--error)}
+.fuentes{display:grid;gap:var(--e1);margin:0;padding:0;list-style:none}
+.fuente-fila{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--e1) var(--e3);
+  align-items:center;background:var(--superficie);border:1px solid var(--borde);
+  border-radius:var(--radio);padding:var(--e2) var(--e3)}
+.fuente-nombre{font-weight:600;font-size:.9375rem;min-width:0;overflow-wrap:anywhere}
+.fuente-datos{grid-column:1;color:var(--texto-suave);font-size:.8125rem}
+.fuente-antiguedad{grid-column:1;color:var(--texto-suave);font-size:.8125rem}
+.chip-fuente{grid-row:1 / span 3;grid-column:2;justify-self:end;white-space:nowrap;
+  font-size:.75rem;padding:2px var(--e2);border-radius:999px;border:1px solid var(--borde);
+  color:var(--texto-suave);background:var(--fondo)}
+.chip-fuente.nuevas{color:var(--ok);border-color:#a9cdb7;background:#eef7f1}
+.chip-fuente.error{color:var(--error);border-color:#e2b4b4;background:#fbf0f0}
+@media (max-width:420px){
+  .fuente-fila{grid-template-columns:1fr}
+  .chip-fuente{grid-row:auto;grid-column:1;justify-self:start}
+}
+.caducadas{background:var(--superficie);border:1px solid var(--borde);border-radius:var(--radio);
+  padding:0 var(--e4);margin:0 0 var(--e5)}
+.caducadas summary{display:flex;align-items:center;justify-content:space-between;
+  min-height:44px;cursor:pointer;list-style:none;font-weight:600;color:var(--acento)}
+.caducadas summary::-webkit-details-marker{display:none}
+.caducadas .indicador{color:var(--texto-suave);font-size:.875rem}
+.caducadas[open] summary{border-bottom:1px solid var(--borde);margin-bottom:var(--e3)}
+.caducadas .fichas{margin-bottom:var(--e3)}
+footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto-suave);font-size:.875rem}
+@media (max-width:420px){
+  main{padding:var(--e4) var(--e3)}
+  h1{font-size:1.375rem}
+  .fichas{grid-template-columns:1fr}
+  .filtros{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Empleo · convocatorias y bolsas de informática</h1>
+<p class="meta">Actualizado hace 1 h</p>
+
+<p class="calendario"><a class="boton-ics" href="plazos.ics" download>Descargar plazos (.ics)</a> <span class="nota-ics">Sin registro: se abre en tu calendario.</span></p>
+</header>
+<section class="calidad" aria-labelledby="h-calidad">
+<h2 id="h-calidad">Calidad de los datos</h2>
+<dl class="datos">
+<div class="dato"><dt>Fuentes OK</dt><dd>23/23</dd></div>
+<div class="dato"><dt>Nuevas (24 h)</dt><dd>0</dd></div>
+<div class="dato"><dt>% con plazo interpretado</dt><dd>48 %</dd></div>
+<div class="dato"><dt>Horas desde la pasada</dt><dd>1,4 h</dd></div>
+<div class="dato"><dt>Fichas perdidas en auditoría</dt><dd>4</dd></div>
+<div class="dato"><dt>Fecha de la auditoría</dt><dd>9 nov. 2026</dd></div>
+</dl>
+</section>
+<div class="filtros">
+<div class="campo"><label for="f-provincia">Provincia</label><select id="f-provincia"><option value="">Todas las provincias</option><option value="Castilla y León">Castilla y León (11)</option><option value="Salamanca">Salamanca (8)</option><option value="Zamora">Zamora (1)</option><option value="Valladolid">Valladolid (7)</option><option value="Soria">Soria (3)</option><option value="Burgos">Burgos (1)</option><option value="Estatal">Estatal (2)</option></select></div>
+<div class="campo"><label for="f-estado">Estado</label><select id="f-estado"><option value="">Todos los estados</option><option value="abierto">Abiertas (2)</option><option value="caducado">Caducadas (14)</option><option value="sinfecha">La fuente no publica plazo (17)</option></select></div>
+</div>
+<section id="sec-solicitar" aria-labelledby="h-solicitar">
+<h2 id="h-solicitar">Solicitar plaza (<span id="cuenta-solicitar">0</span>)</h2>
+<p class="aviso" id="vacio-solicitar">Ahora mismo no hay plazas para solicitar.</p>
+<ul class="fichas">
+</ul>
+</section>
+<section id="sec-otros" aria-labelledby="h-otros">
+<h2 id="h-otros">Trámites en curso (<span id="cuenta-otros">2</span>)</h2>
+<p class="aviso" id="vacio-otros" hidden>Ahora mismo no hay trámites en curso.</p>
+<ul class="fichas">
+<li class="ficha" data-provincia="Castilla y León" data-estado="abierto" data-grupo="otros" data-tipo="Méritos-Alegaciones"><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a de Soporte Informático (2023/2024) — Valoración Provisional de Méritos"><span class="titulo-texto">Técnico-a de Soporte Informático (2023/2024) — Valoración Provisional de Méritos</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Méritos-Alegaciones · quedan 8 días · hasta 19 nov</p><p class="organismo">Junta de CyL · Convocatorias · Grupo C1 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285519792195/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="abierto" data-grupo="otros" data-tipo="Méritos-Alegaciones"><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a Superior de Informática (2022/2024) — Aprobados fase oposición y plazo de presentación de méritos"><span class="titulo-texto">Técnico-a Superior de Informática (2022/2024) — Aprobados fase oposición y plazo de presentación de méritos</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Méritos-Alegaciones · quedan 5 días · hasta 16 nov</p><p class="organismo">Junta de CyL · Convocatorias · Grupo A1 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285519739316/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+</ul>
+</section>
+<section id="sec-sinfecha" aria-labelledby="h-sinfecha">
+<h2 id="h-sinfecha">La fuente no publica plazo (<span id="cuenta-sinfecha">17</span>)</h2>
+<p class="aviso" id="vacio-sinfecha" hidden>Ahora mismo no hay anuncios sin plazo publicado.</p>
+<ul class="fichas">
+<li class="ficha" data-provincia="Salamanca" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Analista programador (1 plaza) (libre)"><span class="titulo-texto">Analista programador (1 plaza) (libre)</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">Salamanca · Ayuntamiento · Oferta de empleo público · Salamanca</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.aytosalamanca.es/w/analista-programador-1-plaza-libre-?p_l_back_url=%2Fes%2Foferta-de-empleo-publico&amp;p_l_back_url_title=Oferta+de+empleo+p%C3%BAblico" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Salamanca" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Diligencia Convocatoria"><span class="titulo-texto">Diligencia Convocatoria</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Técnico/a Especialista en Informática (C1) · Salamanca · Grupo C1 · Salamanca</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/salamanca.ficheros/3148206-DILIGENCIA%20FIRMADA.pdf" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Salamanca" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Diligencia corrección errores publicación convocatoria"><span class="titulo-texto">Diligencia corrección errores publicación convocatoria</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Técnico/a Especialista en Informática (C1) · Salamanca · Grupo C1 · Salamanca</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/salamanca.ficheros/3188435-DILIGENCIA%20CORRECCI%C3%93N%20ERRORES%20INFORMATICO%20firmada.pdf" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Gestión Informática (A2) — Avila"><span class="titulo-texto">Gestión Informática (A2) — Avila</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Gestión Informática (A2) · Grupo A2 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/avila" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Burgos" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Gestión Informática (A2) — Burgos"><span class="titulo-texto">Gestión Informática (A2) — Burgos</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Gestión Informática (A2) · Grupo A2 · Burgos</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/burgos" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Gestión Informática (A2) — Emergencias Sanitarias"><span class="titulo-texto">Gestión Informática (A2) — Emergencias Sanitarias</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Gestión Informática (A2) · Grupo A2 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/emergencias-sanitarias" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Valladolid" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Gestión Informática (A2) — Valladolid"><span class="titulo-texto">Gestión Informática (A2) — Valladolid</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Gestión Informática (A2) · Grupo A2 · Valladolid</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/valladolid" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Zamora" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Gestión Informática (A2) — Zamora"><span class="titulo-texto">Gestión Informática (A2) — Zamora</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Gestión Informática (A2) · Grupo A2 · Zamora</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/zamora" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Salamanca" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="JOVEL 2026. 3 técnicos TIC (candidatos ECYL)"><span class="titulo-texto">JOVEL 2026. 3 técnicos TIC (candidatos ECYL)</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina) · Salamanca</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.lasalina.es/Aplicaciones/GestorInter.jsp?prestacion=rrhh&amp;funcion=detProceSelec&amp;idProceso=7282" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Estatal" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Resolución de 21 de octubre de 2026, de la Universidad Politécnica de Madrid, por la que se corrigen errores en la de 18 de mayo de 2026, por la que se convocan pruebas selectivas para ingreso, por el sistema general de acceso libre y promoción interna, en la Escala de Gestión de Sistemas e Informática."><span class="titulo-texto">Resolución de 21 de octubre de 2026, de la Universidad Politécnica de Madrid, por la que se corrigen errores en la de 18 de mayo de 2026, por la que se convocan pruebas selectivas para ingreso, por el sistema general de acceso libre y promoción interna, en la Escala de Gestión de Sistemas e Informática.</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">BOE · Oposiciones y concursos (sección II.B) · Estatal</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22673" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Titulado Superior de Informática (A1) — Gerencia de Emergencias Sanitarias"><span class="titulo-texto">Titulado Superior de Informática (A1) — Gerencia de Emergencias Sanitarias</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Titulado Superior de Informática (A1) · Grupo A1 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/titulado-superior-informatica-a1/gerencia-emergencias-sanitarias" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Valladolid" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Titulado Superior de Informática (A1) — Valladolid Este"><span class="titulo-texto">Titulado Superior de Informática (A1) — Valladolid Este</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Titulado Superior de Informática (A1) · Grupo A1 · Valladolid</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/titulado-superior-informatica-a1/valladolid" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Valladolid" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Titulado Superior de Informática (A1) — Valladolid Oeste"><span class="titulo-texto">Titulado Superior de Informática (A1) — Valladolid Oeste</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">SACYL · Titulado Superior de Informática (A1) · Grupo A1 · Valladolid</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/titulado-superior-informatica-a1/valladolid-oeste" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a Superior de Informática (2020) — Adjudicación de destinos"><span class="titulo-texto">Técnico-a Superior de Informática (2020) — Adjudicación de destinos</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">Junta de CyL · Convocatorias · Grupo A1 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285332810456/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a Superior de Informática (Promoción Interna) (2022/2024) — Relación definitiva de admitidos - excluidos y convocatoria del 1º ejercicio"><span class="titulo-texto">Técnico-a Superior de Informática (Promoción Interna) (2022/2024) — Relación definitiva de admitidos - excluidos y convocatoria del 1º ejercicio</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">Junta de CyL · Convocatorias · Grupo A1 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285590203759/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a de Gestión Informática (2022/2023/2024) — Lectura 2º Ejercicio"><span class="titulo-texto">Técnico-a de Gestión Informática (2022/2023/2024) — Lectura 2º Ejercicio</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">Junta de CyL · Convocatorias · Grupo A2 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285519771741/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="sinfecha" data-grupo="sinfecha" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a de Soporte Informático (Promoción Interna) (2020) — Adjudicación de destinos"><span class="titulo-texto">Técnico-a de Soporte Informático (Promoción Interna) (2020) — Adjudicación de destinos</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · La fuente no publica plazo</p><p class="organismo">Junta de CyL · Convocatorias · Grupo C1 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285340745884/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+</ul>
+</section>
+<details class="caducadas" id="caducadas">
+<summary><span>Ver <span id="cuenta-caducadas">14</span> caducadas</span><span class="indicador" aria-hidden="true">▾</span></summary>
+<p class="aviso" id="vacio-caducadas" hidden>Todavía no hay anuncios caducados.</p>
+<ul class="fichas">
+<li class="ficha" data-provincia="Estatal" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Resolución de 8 de octubre de 2026, de la Secretaría General del Senado, por la que se convoca proceso selectivo para la provisión, por turno libre y de discapacidad, de plazas de Técnico/a Superior de Tecnologías de la Información."><span class="titulo-texto">Resolución de 8 de octubre de 2026, de la Secretaría General del Senado, por la que se convoca proceso selectivo para la provisión, por turno libre y de discapacidad, de plazas de Técnico/a Superior de Tecnologías de la Información.</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 5 nov</p><p class="organismo">BOE · Oposiciones y concursos (sección II.B) · Estatal</p><p class="comprobado">Comprobado el 4 nov.</p><p class="acciones"><a class="accion" href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21474" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Salamanca" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="LL0577 - LL0579 - LL0569 (tres puestos) técnico especialista operador (grupo III). Servicios informáticos CPD."><span class="titulo-texto">LL0577 - LL0579 - LL0569 (tres puestos) técnico especialista operador (grupo III). Servicios informáticos CPD.</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 6 may</p><p class="organismo">Universidad de Salamanca · Adscripción temporal PTGAS · Salamanca</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://sede.usal.es/tablon/anuncio/10616/" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="caducado" data-grupo="caducado" data-tipo="Méritos-Alegaciones"><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a de Gestión Informática (Promoción Interna) (2022/23/24) — Relación provisional de admitidos y excluidos"><span class="titulo-texto">Técnico-a de Gestión Informática (Promoción Interna) (2022/23/24) — Relación provisional de admitidos y excluidos</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Méritos-Alegaciones · caducado el 13 abr</p><p class="organismo">Junta de CyL · Convocatorias · Grupo A2 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285584370271/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Castilla y León" data-estado="caducado" data-grupo="caducado" data-tipo="Méritos-Alegaciones"><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a de Soporte Informático (Promoción Interna) (2022/23/24) — Relación provisional de admitidos y excluidos"><span class="titulo-texto">Técnico-a de Soporte Informático (Promoción Interna) (2022/23/24) — Relación provisional de admitidos y excluidos</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Méritos-Alegaciones · caducado el 13 abr</p><p class="organismo">Junta de CyL · Convocatorias · Grupo C1 · Castilla y León</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285585568803/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Salamanca" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Convocatoria T.E. Informatica (C1)"><span class="titulo-texto">Convocatoria T.E. Informatica (C1)</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 6 nov. 2025</p><p class="organismo">SACYL · Técnico/a Especialista en Informática (C1) · Salamanca · Grupo C1 · Salamanca</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/salamanca.ficheros/3148205-CONVOCATORIA%20INFORMATICA%20firmada.pdf" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Valladolid" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Analista-Programador/a. Convocatoria de 7 plazas para personal funcionario de carrera"><span class="titulo-texto">Analista-Programador/a. Convocatoria de 7 plazas para personal funcionario de carrera</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 23 may. 2025</p><p class="organismo">Valladolid · Diputación · Convocatorias y oposiciones · Valladolid</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.diputaciondevalladolid.es:443/convocatorias-y-oposiciones/-/journal_content/56/10181/6406318" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Soria" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Ayudante de informática (estabilización)"><span class="titulo-texto">Ayudante de informática (estabilización)</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 15 nov. 2024</p><p class="organismo">Soria · Ayuntamiento · Empleo público · Soria</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.soria.es/empleo-publico/ayudante-de-informatica-estabilizacion/" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Soria" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico de informática y transparencia (estabilización)"><span class="titulo-texto">Técnico de informática y transparencia (estabilización)</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 15 nov. 2024</p><p class="organismo">Soria · Ayuntamiento · Empleo público · Soria</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.soria.es/empleo-publico/tecnico-de-informatica-y-transparencia-estabilizacion/" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Soria" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Responsable informático (estabilización)"><span class="titulo-texto">Responsable informático (estabilización)</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 15 nov. 2024</p><p class="organismo">Soria · Ayuntamiento · Empleo público · Soria</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.soria.es/empleo-publico/responsable-informatico-estabilizacion/" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Valladolid" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Analista-Programador/a en REVAL. Convocatoria de 1 plaza para personal funcionario de carrera"><span class="titulo-texto">Analista-Programador/a en REVAL. Convocatoria de 1 plaza para personal funcionario de carrera</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 19 jun. 2023</p><p class="organismo">Valladolid · Diputación · Convocatorias y oposiciones · Valladolid</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.diputaciondevalladolid.es:443/convocatorias-y-oposiciones/-/journal_content/56/10181/4982505" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Salamanca" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Contratación temporal de dos técnicos medios con especialización en proyectos de digitalización destinados a la implementación y ejecución del proyecto de creación de la red de oficinas acelera pyme para el entorno rural de la provincia de salamanca"><span class="titulo-texto">Contratación temporal de dos técnicos medios con especialización en proyectos de digitalización destinados a la implementación y ejecución del proyecto de creación de la red de oficinas acelera pyme para el entorno rural de la provincia de salamanca</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 8 may. 2023</p><p class="organismo">Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina) · Salamanca</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.lasalina.es/Aplicaciones/GestorInter.jsp?prestacion=rrhh&amp;funcion=detProceSelec&amp;idProceso=5361" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Salamanca" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Convocatoria de los procesos selectivos para la cobertura definitiva de plazas de tecnico/a TIC incluidas en las OEP del ejercicio 2022. Código 2022B14"><span class="titulo-texto">Convocatoria de los procesos selectivos para la cobertura definitiva de plazas de tecnico/a TIC incluidas en las OEP del ejercicio 2022. Código 2022B14</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 27 feb. 2023</p><p class="organismo">Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina) · Salamanca</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.lasalina.es/Aplicaciones/GestorInter.jsp?prestacion=rrhh&amp;funcion=detProceSelec&amp;idProceso=5274" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Valladolid" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Convocatoria y Bases para la constitución de una Bolsa de personal funcionario interino de Analista"><span class="titulo-texto">Convocatoria y Bases para la constitución de una Bolsa de personal funcionario interino de Analista</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 16 nov. 2022</p><p class="organismo">Valladolid · Diputación · Convocatorias y oposiciones · Valladolid</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.diputaciondevalladolid.es:443/convocatorias-y-oposiciones/-/journal_content/56/10181/4506861" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Valladolid" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Convocatoria y Bases para la constitución de una Bolsa de personal funcionario interino de Analista - Programador/a"><span class="titulo-texto">Convocatoria y Bases para la constitución de una Bolsa de personal funcionario interino de Analista - Programador/a</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 17 sep. 2021</p><p class="organismo">Valladolid · Diputación · Convocatorias y oposiciones · Valladolid</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.diputaciondevalladolid.es:443/convocatorias-y-oposiciones/-/journal_content/56/10181/3695798" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+</ul>
+</details>
+<section id="calidad-fuentes" aria-labelledby="h-fuentes">
+<h2 id="h-fuentes">Calidad por fuente (23)</h2>
+<ul class="fuentes">
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Convocatorias</span><span class="fuente-datos">Última lectura hoy, 11:25 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Empleo Temporal y bolsas</span><span class="fuente-datos">Última lectura hoy, 11:25 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Titulado Superior de Informática (A1)</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Gestión Informática (A2)</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Técnico/a Especialista en Informática (C1) · Salamanca</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Universidad de Salamanca · Adscripción temporal PTGAS</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">BOE · Oposiciones y concursos (sección II.B)</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">AEAT · Trabajar en la Agencia Tributaria</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Zamora · Boletín Oficial de la Provincia</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">León · Boletín Oficial de la Provincia</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Salamanca · Ayuntamiento · Oferta de empleo público</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Zamora · Diputación · Empleo</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Ávila · Ayuntamiento · Recursos Humanos</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Ávila · Diputación · Oferta de empleo público</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Segovia · Diputación · Ofertas de empleo público</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Palencia · Diputación · Empleo</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Soria · Ayuntamiento · Empleo público</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Palencia · Ayuntamiento · Oposiciones</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Soria · Diputación · Bolsas de empleo</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Valladolid · Diputación · Convocatorias y oposiciones</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Valladolid · Tablón oficial de empleo público (Ayuntamiento)</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina)</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Ayuntamiento de Salamanca · Bolsas de empleo</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+</ul>
+</section>
+<footer>
+<p>El detalle de cada aviso está en el boletín. Datos abiertos: <a href="panel.json">panel.json</a>.</p>
+</footer>
+</main>
+<script>
+(function () {
+  var fProv = document.getElementById('f-provincia');
+  var fEst = document.getElementById('f-estado');
+  var detalles = document.getElementById('caducadas');
+  var cuentaSolicitar = document.getElementById('cuenta-solicitar');
+  var cuentaOtros = document.getElementById('cuenta-otros');
+  var cuentaSinfecha = document.getElementById('cuenta-sinfecha');
+  var cuentaCaducadas = document.getElementById('cuenta-caducadas');
+  var vacioSolicitar = document.getElementById('vacio-solicitar');
+  var vacioOtros = document.getElementById('vacio-otros');
+  var vacioSinfecha = document.getElementById('vacio-sinfecha');
+  var vacioCaducadas = document.getElementById('vacio-caducadas');
+  if (!fProv || !fEst) { return; }
+
+  function estado(el) { return el.getAttribute('data-estado') || ''; }
+  function provincia(el) { return el.getAttribute('data-provincia') || ''; }
+  function grupo(el) { return el.getAttribute('data-grupo') || ''; }
+
+  function aplicar() {
+    var p = fProv.value, e = fEst.value;
+    var solicitar = 0, otros = 0, sinfecha = 0, caducadas = 0;
+    var fichas = document.querySelectorAll('.ficha[data-estado]');
+    for (var i = 0; i < fichas.length; i++) {
+      var el = fichas[i];
+      var vale = (!p || provincia(el) === p) && (!e || estado(el) === e);
+      el.hidden = !vale;
+      if (!vale) { continue; }
+      var g = grupo(el);
+      if (g === 'solicitar') { solicitar++; }
+      else if (g === 'otros') { otros++; }
+      else if (g === 'sinfecha') { sinfecha++; }
+      else { caducadas++; }
+    }
+    if (cuentaSolicitar) { cuentaSolicitar.textContent = solicitar; }
+    if (cuentaOtros) { cuentaOtros.textContent = otros; }
+    if (cuentaSinfecha) { cuentaSinfecha.textContent = sinfecha; }
+    if (cuentaCaducadas) { cuentaCaducadas.textContent = caducadas; }
+
+    var filtrando = !!(p || e);
+    var seccionSolicitar = document.getElementById('sec-solicitar');
+    var seccionOtros = document.getElementById('sec-otros');
+    var seccionSinfecha = document.getElementById('sec-sinfecha');
+    if (seccionSolicitar) { seccionSolicitar.hidden = filtrando && solicitar === 0; }
+    if (seccionOtros) { seccionOtros.hidden = filtrando && otros === 0; }
+    if (seccionSinfecha) {
+      seccionSinfecha.hidden = (e === 'abierto' || e === 'caducado')
+        ? true : (filtrando && sinfecha === 0);
+    }
+    if (detalles) {
+      detalles.hidden = (e === 'abierto' || e === 'sinfecha')
+        ? true : (filtrando && caducadas === 0);
+      if (e === 'caducado') { detalles.open = true; }
+      if (e === 'abierto' || e === 'sinfecha') { detalles.open = false; }
+    }
+    if (vacioSolicitar) {
+      vacioSolicitar.hidden = solicitar > 0;
+      vacioSolicitar.textContent = filtrando
+        ? 'No hay plazas para solicitar con estos filtros.'
+        : 'Ahora mismo no hay plazas para solicitar.';
+    }
+    if (vacioOtros) {
+      vacioOtros.hidden = otros > 0;
+      vacioOtros.textContent = filtrando
+        ? 'No hay trámites en curso con estos filtros.'
+        : 'Ahora mismo no hay trámites en curso.';
+    }
+    if (vacioSinfecha) {
+      vacioSinfecha.hidden = sinfecha > 0;
+      vacioSinfecha.textContent = filtrando
+        ? 'No hay anuncios sin plazo publicado con estos filtros.'
+        : 'Ahora mismo no hay anuncios sin plazo publicado.';
+    }
+    if (vacioCaducadas) {
+      vacioCaducadas.hidden = caducadas > 0;
+    }
+  }
+
+  var parametros = new URLSearchParams(window.location.search);
+  if (parametros.get('provincia')) { fProv.value = parametros.get('provincia'); }
+  if (parametros.get('estado')) { fEst.value = parametros.get('estado'); }
+  if (parametros.get('caducadas') === '1' && detalles) { detalles.open = true; }
+  fProv.addEventListener('change', aplicar);
+  fEst.addEventListener('change', aplicar);
+  aplicar();
+
+  var titulos = document.querySelectorAll('.titulo');
+  for (var j = 0; j < titulos.length; j++) {
+    titulos[j].addEventListener('click', function () {
+      var abierto = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', abierto ? 'false' : 'true');
+      var ficha = this.closest('.ficha');
+      if (ficha) { ficha.classList.toggle('titulo-abierto', !abierto); }
+    });
+  }
+})();
+</script>
+</body>
+</html>

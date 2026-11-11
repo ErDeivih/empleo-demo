@@ -1,0 +1,363 @@
+{
+  "generado": "2026-11-11T12:54:44",
+  "ultima_pasada": "2026-11-11T11:28:57",
+  "fuentes_ok": [
+    "Junta de CyL · Convocatorias",
+    "Junta de CyL · Empleo Temporal y bolsas",
+    "SACYL · Titulado Superior de Informática (A1)",
+    "SACYL · Gestión Informática (A2)",
+    "SACYL · Técnico/a Especialista en Informática (C1) · Salamanca",
+    "Universidad de Salamanca · Adscripción temporal PTGAS",
+    "BOE · Oposiciones y concursos (sección II.B)",
+    "AEAT · Trabajar en la Agencia Tributaria",
+    "Zamora · Boletín Oficial de la Provincia",
+    "León · Boletín Oficial de la Provincia",
+    "Salamanca · Ayuntamiento · Oferta de empleo público",
+    "Zamora · Diputación · Empleo",
+    "Ávila · Ayuntamiento · Recursos Humanos",
+    "Ávila · Diputación · Oferta de empleo público",
+    "Segovia · Diputación · Ofertas de empleo público",
+    "Palencia · Diputación · Empleo",
+    "Soria · Ayuntamiento · Empleo público",
+    "Palencia · Ayuntamiento · Oposiciones",
+    "Soria · Diputación · Bolsas de empleo",
+    "Valladolid · Diputación · Convocatorias y oposiciones",
+    "Valladolid · Tablón oficial de empleo público (Ayuntamiento)",
+    "Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina)",
+    "Ayuntamiento de Salamanca · Bolsas de empleo"
+  ],
+  "fuentes_error": [],
+  "total_fichas": 33,
+  "items": [
+    {
+      "id": "6c979786d1f76fcef593ff9183c1f23ec419abd1",
+      "titulo": "Técnico-a de Soporte Informático (2023/2024) — Valoración Provisional de Méritos",
+      "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285519792195/Empleo",
+      "fuente": "Junta de CyL · Convocatorias",
+      "plazo": "2026-11-19",
+      "estado_plazo": "abierto",
+      "grupo": "C1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "2c597766ebf0606256d2ded40c60e37d8766e262",
+      "titulo": "Técnico-a de Gestión Informática (2022/2023/2024) — Lectura 2º Ejercicio",
+      "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285519771741/Empleo",
+      "fuente": "Junta de CyL · Convocatorias",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A2",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "7da363dfca660b14421b22dd960602ec3f06e014",
+      "titulo": "Técnico-a Superior de Informática (2020) — Adjudicación de destinos",
+      "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285332810456/Empleo",
+      "fuente": "Junta de CyL · Convocatorias",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "1a10ef7263224efcdb664ce52a2877f068284631",
+      "titulo": "Técnico-a Superior de Informática (2022/2024) — Aprobados fase oposición y plazo de presentación de méritos",
+      "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285519739316/Empleo",
+      "fuente": "Junta de CyL · Convocatorias",
+      "plazo": "2026-11-16",
+      "estado_plazo": "abierto",
+      "grupo": "A1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "72afba301587a9932e3f06995861d0da31cc4e4f",
+      "titulo": "Técnico-a de Gestión Informática (Promoción Interna) (2022/23/24) — Relación provisional de admitidos y excluidos",
+      "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285584370271/Empleo",
+      "fuente": "Junta de CyL · Convocatorias",
+      "plazo": "2026-04-13",
+      "estado_plazo": "caducado",
+      "grupo": "A2",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "cd28d680a7621dfb2025f4c0fbee1df8d07d6e8c",
+      "titulo": "Técnico-a de Soporte Informático (Promoción Interna) (2020) — Adjudicación de destinos",
+      "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285340745884/Empleo",
+      "fuente": "Junta de CyL · Convocatorias",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "C1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "1b4b1e95355c4570811dd6ddb6eb63e8b0438a4d",
+      "titulo": "Técnico-a de Soporte Informático (Promoción Interna) (2022/23/24) — Relación provisional de admitidos y excluidos",
+      "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285585568803/Empleo",
+      "fuente": "Junta de CyL · Convocatorias",
+      "plazo": "2026-04-13",
+      "estado_plazo": "caducado",
+      "grupo": "C1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "6dc69501ebd3556d68dc0977c22b658f79a4131f",
+      "titulo": "Técnico-a Superior de Informática (Promoción Interna) (2022/2024) — Relación definitiva de admitidos - excluidos y convocatoria del 1º ejercicio",
+      "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285590203759/Empleo",
+      "fuente": "Junta de CyL · Convocatorias",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "4952c5c00ecbef6fec13650528331138c1ecd94c",
+      "titulo": "Titulado Superior de Informática (A1) — Gerencia de Emergencias Sanitarias",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/titulado-superior-informatica-a1/gerencia-emergencias-sanitarias",
+      "fuente": "SACYL · Titulado Superior de Informática (A1)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "ef4bd3b36fbffcf1d7be31f2b1b8f0f6254ad412",
+      "titulo": "Titulado Superior de Informática (A1) — Valladolid Este",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/titulado-superior-informatica-a1/valladolid",
+      "fuente": "SACYL · Titulado Superior de Informática (A1)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "6ac71026a8787ff066afe05007816279853d627e",
+      "titulo": "Titulado Superior de Informática (A1) — Valladolid Oeste",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/titulado-superior-informatica-a1/valladolid-oeste",
+      "fuente": "SACYL · Titulado Superior de Informática (A1)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "9420545e06bd7876e36b33689036990409d0aae8",
+      "titulo": "Gestión Informática (A2) — Avila",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/avila",
+      "fuente": "SACYL · Gestión Informática (A2)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A2",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "f52c9aa4962b61fb7cf554939234bdc6b4b23a20",
+      "titulo": "Gestión Informática (A2) — Burgos",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/burgos",
+      "fuente": "SACYL · Gestión Informática (A2)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A2",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "85039eb6bdd0b5ea42132e4a6bcf7b666899f637",
+      "titulo": "Gestión Informática (A2) — Emergencias Sanitarias",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/emergencias-sanitarias",
+      "fuente": "SACYL · Gestión Informática (A2)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A2",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "e223d0c6aea88567b5773a708c39076c474c1adc",
+      "titulo": "Gestión Informática (A2) — Valladolid",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/valladolid",
+      "fuente": "SACYL · Gestión Informática (A2)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A2",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "47b4a143ff876ff65e71b069b4e1f028731f9dc2",
+      "titulo": "Gestión Informática (A2) — Zamora",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/gestion-informatica-a2/zamora",
+      "fuente": "SACYL · Gestión Informática (A2)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "A2",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "8ba3ec18370ac1192cd14d542761bd3970adc3a1",
+      "titulo": "Convocatoria T.E. Informatica (C1)",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/salamanca.ficheros/3148205-CONVOCATORIA%20INFORMATICA%20firmada.pdf",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1) · Salamanca",
+      "plazo": "2025-11-06",
+      "estado_plazo": "caducado",
+      "grupo": "C1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "734a8f9d9a1e7fbeaf4ab19fbdddc59a5b51fa71",
+      "titulo": "Diligencia Convocatoria",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/salamanca.ficheros/3148206-DILIGENCIA%20FIRMADA.pdf",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1) · Salamanca",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "C1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "3620b439213ddbaf9cbb1aa717723663c2cdefcb",
+      "titulo": "Diligencia corrección errores publicación convocatoria",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/salamanca.ficheros/3188435-DILIGENCIA%20CORRECCI%C3%93N%20ERRORES%20INFORMATICO%20firmada.pdf",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1) · Salamanca",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "C1",
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "576e6c3334461e30237e6586849b7b1c35187882",
+      "titulo": "LL0577 - LL0579 - LL0569 (TRES PUESTOS) TÉCNICO ESPECIALISTA OPERADOR (GRUPO III). SERVICIOS INFORMÁTICOS CPD.",
+      "url": "https://sede.usal.es/tablon/anuncio/10616/",
+      "fuente": "Universidad de Salamanca · Adscripción temporal PTGAS",
+      "plazo": "2026-05-06",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "01b6b279d8d073dd470acec723a93817e8d7ad58",
+      "titulo": "Resolución de 21 de octubre de 2026, de la Universidad Politécnica de Madrid, por la que se corrigen errores en la de 18 de mayo de 2026, por la que se convocan pruebas selectivas para ingreso, por el sistema general de acceso libre y promoción interna, en la Escala de Gestión de Sistemas e Informática.",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22673",
+      "fuente": "BOE · Oposiciones y concursos (sección II.B)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "7fffde865becea3d7887b6a77755eba34f3660a8",
+      "titulo": "Resolución de 8 de octubre de 2026, de la Secretaría General del Senado, por la que se convoca proceso selectivo para la provisión, por turno libre y de discapacidad, de plazas de Técnico/a Superior de Tecnologías de la Información.",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21474",
+      "fuente": "BOE · Oposiciones y concursos (sección II.B)",
+      "plazo": "2026-11-05",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-04"
+    },
+    {
+      "id": "848a18cbcaa29ad1ef8c46760545fe5cb5c0bad3",
+      "titulo": "Analista-Programador/a. Convocatoria de 7 plazas para personal funcionario de carrera",
+      "url": "https://www.diputaciondevalladolid.es:443/convocatorias-y-oposiciones/-/journal_content/56/10181/6406318",
+      "fuente": "Valladolid · Diputación · Convocatorias y oposiciones",
+      "plazo": "2025-05-23",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "93ffee014ab21fa34c5aaa4ab1cd2ad4474d6958",
+      "titulo": "Analista-Programador/a en REVAL. Convocatoria de 1 plaza para personal funcionario de carrera",
+      "url": "https://www.diputaciondevalladolid.es:443/convocatorias-y-oposiciones/-/journal_content/56/10181/4982505",
+      "fuente": "Valladolid · Diputación · Convocatorias y oposiciones",
+      "plazo": "2023-06-19",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "578ee6bc773bb62edea8485cdc4d0e0c5068e803",
+      "titulo": "Convocatoria y Bases para la constitución de una Bolsa de personal funcionario interino de Analista",
+      "url": "https://www.diputaciondevalladolid.es:443/convocatorias-y-oposiciones/-/journal_content/56/10181/4506861",
+      "fuente": "Valladolid · Diputación · Convocatorias y oposiciones",
+      "plazo": "2022-11-16",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "74d4b34360b0995c1b1aad86ade61a3edb1d019a",
+      "titulo": "Convocatoria y Bases para la constitución de una Bolsa de personal funcionario interino de Analista - Programador/a",
+      "url": "https://www.diputaciondevalladolid.es:443/convocatorias-y-oposiciones/-/journal_content/56/10181/3695798",
+      "fuente": "Valladolid · Diputación · Convocatorias y oposiciones",
+      "plazo": "2021-09-17",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "9f68ac401afac9c3ca1595bb1da9354ba18c320e",
+      "titulo": "CONTRATACIÓN TEMPORAL DE DOS TÉCNICOS MEDIOS CON ESPECIALIZACIÓN EN PROYECTOS DE DIGITALIZACIÓN DESTINADOS A LA IMPLEMENTACIÓN Y EJECUCIÓN DEL PROYECTO DE CREACIÓN DE LA RED DE OFICINAS ACELERA PYME PARA EL ENTORNO RURAL DE LA PROVINCIA DE SALAMANCA",
+      "url": "https://www.lasalina.es/Aplicaciones/GestorInter.jsp?prestacion=rrhh&funcion=detProceSelec&idProceso=5361",
+      "fuente": "Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina)",
+      "plazo": "2023-05-08",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "2ecfa6965b077659749fccb9b4eceebf1e584122",
+      "titulo": "CONVOCATORIA DE LOS PROCESOS SELECTIVOS PARA LA COBERTURA DEFINITIVA DE PLAZAS DE TECNICO/A TIC INCLUIDAS EN LAS OEP DEL EJERCICIO 2022. CÓDIGO 2022B14",
+      "url": "https://www.lasalina.es/Aplicaciones/GestorInter.jsp?prestacion=rrhh&funcion=detProceSelec&idProceso=5274",
+      "fuente": "Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina)",
+      "plazo": "2023-02-27",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "059584540923aebeb33cafe413675df555bbe3b0",
+      "titulo": "JOVEL 2026. 3 TÉCNICOS TIC (CANDIDATOS ECYL)",
+      "url": "https://www.lasalina.es/Aplicaciones/GestorInter.jsp?prestacion=rrhh&funcion=detProceSelec&idProceso=7282",
+      "fuente": "Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "1d7dc204904832598e61cdb18519f361f1caab01",
+      "titulo": "ANALISTA PROGRAMADOR (1 PLAZA) (LIBRE)",
+      "url": "https://www.aytosalamanca.es/w/analista-programador-1-plaza-libre-?p_l_back_url=%2Fes%2Foferta-de-empleo-publico&p_l_back_url_title=Oferta+de+empleo+p%C3%BAblico",
+      "fuente": "Salamanca · Ayuntamiento · Oferta de empleo público",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "e8889912c9e388adf4b184a91861baa67ad165ad",
+      "titulo": "AYUDANTE DE INFORMÁTICA (ESTABILIZACIÓN)",
+      "url": "https://www.soria.es/empleo-publico/ayudante-de-informatica-estabilizacion/",
+      "fuente": "Soria · Ayuntamiento · Empleo público",
+      "plazo": "2024-11-15",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "455a9b47f8032be41f2f4e4a5558f0b054de890e",
+      "titulo": "TÉCNICO DE INFORMÁTICA Y TRANSPARENCIA (ESTABILIZACIÓN)",
+      "url": "https://www.soria.es/empleo-publico/tecnico-de-informatica-y-transparencia-estabilizacion/",
+      "fuente": "Soria · Ayuntamiento · Empleo público",
+      "plazo": "2024-11-15",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    },
+    {
+      "id": "7f9109d8953612108176528501156d412cedc2d2",
+      "titulo": "RESPONSABLE INFORMÁTICO (ESTABILIZACIÓN)",
+      "url": "https://www.soria.es/empleo-publico/responsable-informatico-estabilizacion/",
+      "fuente": "Soria · Ayuntamiento · Empleo público",
+      "plazo": "2024-11-15",
+      "estado_plazo": "caducado",
+      "grupo": null,
+      "comprobado": "2026-11-11"
+    }
+  ]
+}
