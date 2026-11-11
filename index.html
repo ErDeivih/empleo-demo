@@ -99,6 +99,26 @@ section{margin:0 0 var(--e6)}
 .caducadas .indicador{color:var(--texto-suave);font-size:.875rem}
 .caducadas[open] summary{border-bottom:1px solid var(--borde);margin-bottom:var(--e3)}
 .caducadas .fichas{margin-bottom:var(--e3)}
+.tabla-scroll{overflow-x:auto;border:1px solid var(--borde);border-radius:var(--radio)}
+.tabla-cobertura{width:100%;border-collapse:collapse;background:var(--superficie);
+  font-size:.875rem;min-width:420px}
+.tabla-cobertura th,.tabla-cobertura td{padding:var(--e2) var(--e3);text-align:left;
+  border-bottom:1px solid var(--borde)}
+.tabla-cobertura th{background:var(--fondo);color:var(--texto-suave);font-size:.75rem;
+  text-transform:uppercase;letter-spacing:.02em}
+.tabla-cobertura tr:last-child td{border-bottom:0}
+.nota{color:var(--texto-suave);font-size:.8125rem;margin:var(--e2) 0 0}
+.rectificacion{background:var(--superficie);border:1px solid var(--borde);
+  border-radius:var(--radio);padding:var(--e4);margin:0 0 var(--e3)}
+.rectificacion h3{font-size:1rem;margin:0 0 var(--e2)}
+.vigente{margin:0 0 var(--e2);color:var(--aviso)}
+.historial{margin:0;padding-left:var(--e4);font-size:.875rem;color:var(--texto-suave)}
+.historial li{margin:0 0 var(--e2)}
+.historial li.actual{color:var(--texto)}
+.historial time{font-variant-numeric:tabular-nums;color:var(--texto)}
+.historial .fuente{font-weight:600;color:var(--acento)}
+.chip-vigente{font-size:.75rem;color:var(--ok);border:1px solid #a9cdb7;
+  background:#eef7f1;border-radius:999px;padding:1px var(--e2);white-space:nowrap}
 footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto-suave);font-size:.875rem}
 @media (max-width:420px){
   main{padding:var(--e4) var(--e3)}
@@ -113,7 +133,7 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <main>
 <header>
 <h1>Empleo · convocatorias y bolsas de informática</h1>
-<p class="meta">Actualizado hace 1 h</p>
+<p class="meta">Actualizado hace 2 h</p>
 
 <p class="calendario"><a class="boton-ics" href="plazos.ics" download>Descargar plazos (.ics)</a> <span class="nota-ics">Sin registro: se abre en tu calendario.</span></p>
 </header>
@@ -123,7 +143,7 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <div class="dato"><dt>Fuentes OK</dt><dd>23/23</dd></div>
 <div class="dato"><dt>Nuevas (24 h)</dt><dd>0</dd></div>
 <div class="dato"><dt>% con plazo interpretado</dt><dd>48 %</dd></div>
-<div class="dato"><dt>Horas desde la pasada</dt><dd>1,5 h</dd></div>
+<div class="dato"><dt>Horas desde la pasada</dt><dd>2,1 h</dd></div>
 <div class="dato"><dt>Fichas perdidas en auditoría</dt><dd>4</dd></div>
 <div class="dato"><dt>Fecha de la auditoría</dt><dd>9 nov. 2026</dd></div>
 </dl>
@@ -189,32 +209,54 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <li class="ficha" data-provincia="Valladolid" data-estado="caducado" data-grupo="caducado" data-tipo="Informativo"><h3><button type="button" class="titulo" aria-expanded="false" title="Convocatoria y Bases para la constitución de una Bolsa de personal funcionario interino de Analista - Programador/a"><span class="titulo-texto">Convocatoria y Bases para la constitución de una Bolsa de personal funcionario interino de Analista - Programador/a</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="plazo-tipo">Informativo · caducado el 17 sep. 2021</p><p class="organismo">Valladolid · Diputación · Convocatorias y oposiciones · Valladolid</p><p class="comprobado">Comprobado el 11 nov.</p><p class="acciones"><a class="accion" href="https://www.diputaciondevalladolid.es:443/convocatorias-y-oposiciones/-/journal_content/56/10181/3695798" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
 </ul>
 </details>
+<section id="cobertura-pag" aria-labelledby="h-cobertura">
+<h2 id="h-cobertura">Cobertura frente al PAG</h2>
+<div class="tabla-scroll"><table class="tabla-cobertura">
+<thead><tr><th>Métrica</th><th>Numerador</th><th>Denominador</th><th>Fecha</th></tr></thead><tbody>
+<tr><td>PAG autonómico que tenemos</td><td>3</td><td>14</td><td>11 nov. 2026</td></tr>
+<tr><td>PAG local que tenemos</td><td>0</td><td>51</td><td>11 nov. 2026</td></tr>
+<tr><td>PAG total que tenemos</td><td>3</td><td>65</td><td>11 nov. 2026</td></tr>
+<tr><td>Nuestras fichas fuera del PAG</td><td>25</td><td>33</td><td>11 nov. 2026</td></tr>
+</tbody></table></div>
+<p class="nota">PAG autonómico 14 + local 51 · nuestras 33 fichas.</p>
+</section>
+<section id="rectificaciones" aria-labelledby="h-rectificaciones">
+<h2 id="h-rectificaciones">Rectificaciones</h2>
+<article class="rectificacion">
+<h3>Escala de Gestión de Sistemas e Informática — Universidad Politécnica de Madrid (A2)</h3>
+<p class="vigente"><strong>Fecha vigente: 29 oct.</strong></p>
+<ol class="historial">
+<li><time datetime="2026-05-26">26 may.</time> · <span class="fuente">BOE</span> · <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-11382" target="_blank" rel="noopener">Convocatoria original (9 plazas, acceso libre y promoción interna)</a></li>
+<li class="actual"><time datetime="2026-10-29">29 oct.</time> · <span class="fuente">BOE</span> · <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22673" target="_blank" rel="noopener">Corrección de errores de la convocatoria</a> <span class="chip-vigente">Vigente</span></li>
+</ol>
+</article>
+</section>
 <section id="calidad-fuentes" aria-labelledby="h-fuentes">
 <h2 id="h-fuentes">Calidad por fuente (23)</h2>
 <ul class="fuentes">
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Convocatorias</span><span class="fuente-datos">Última lectura hoy, 11:25 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Empleo Temporal y bolsas</span><span class="fuente-datos">Última lectura hoy, 11:25 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Titulado Superior de Informática (A1)</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Gestión Informática (A2)</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Técnico/a Especialista en Informática (C1) · Salamanca</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Universidad de Salamanca · Adscripción temporal PTGAS</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">BOE · Oposiciones y concursos (sección II.B)</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">AEAT · Trabajar en la Agencia Tributaria</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Zamora · Boletín Oficial de la Provincia</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">León · Boletín Oficial de la Provincia</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Salamanca · Ayuntamiento · Oferta de empleo público</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Zamora · Diputación · Empleo</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Ávila · Ayuntamiento · Recursos Humanos</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Ávila · Diputación · Oferta de empleo público</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Segovia · Diputación · Ofertas de empleo público</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Palencia · Diputación · Empleo</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Soria · Ayuntamiento · Empleo público</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Palencia · Ayuntamiento · Oposiciones</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Soria · Diputación · Bolsas de empleo</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Valladolid · Diputación · Convocatorias y oposiciones</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Valladolid · Tablón oficial de empleo público (Ayuntamiento)</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina)</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Ayuntamiento de Salamanca · Bolsas de empleo</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Convocatorias</span><span class="fuente-datos">Última lectura hoy, 11:25 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Empleo Temporal y bolsas</span><span class="fuente-datos">Última lectura hoy, 11:25 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Titulado Superior de Informática (A1)</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Gestión Informática (A2)</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Técnico/a Especialista en Informática (C1) · Salamanca</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Universidad de Salamanca · Adscripción temporal PTGAS</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">BOE · Oposiciones y concursos (sección II.B)</span><span class="fuente-datos">Última lectura hoy, 11:26 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">AEAT · Trabajar en la Agencia Tributaria</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Zamora · Boletín Oficial de la Provincia</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">León · Boletín Oficial de la Provincia</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Salamanca · Ayuntamiento · Oferta de empleo público</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Zamora · Diputación · Empleo</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Ávila · Ayuntamiento · Recursos Humanos</span><span class="fuente-datos">Última lectura hoy, 11:27 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Ávila · Diputación · Oferta de empleo público</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Segovia · Diputación · Ofertas de empleo público</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Palencia · Diputación · Empleo</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Soria · Ayuntamiento · Empleo público</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Palencia · Ayuntamiento · Oposiciones</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Soria · Diputación · Bolsas de empleo</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Valladolid · Diputación · Convocatorias y oposiciones</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Valladolid · Tablón oficial de empleo público (Ayuntamiento)</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina)</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Ayuntamiento de Salamanca · Bolsas de empleo</span><span class="fuente-datos">Última lectura hoy, 11:28 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 2 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
 </ul>
 </section>
 <footer>
