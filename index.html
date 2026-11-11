@@ -41,8 +41,17 @@ a:focus-visible,summary:focus-visible,button:focus-visible,select:focus-visible{
 .dato dd{margin:var(--e1) 0 0;font-size:1.25rem;font-weight:700;line-height:1.2}
 .aviso-ambar{border-left:4px solid #b45309;background:#fffbeb;color:#7c2d12;
   padding:var(--e3);border-radius:var(--radio);margin:var(--e3) 0 0;font-weight:600}
-.filtros{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:var(--e3);
-  margin:0 0 var(--e5)}
+.filtros{display:grid;gap:var(--e3);margin:0 0 var(--e5)}
+.grupo-chips{display:flex;flex-direction:column;gap:var(--e1);min-width:0}
+.etiqueta{font-size:.8125rem;letter-spacing:.02em;text-transform:uppercase;
+  color:var(--texto-suave);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:var(--e2)}
+.chip{min-height:44px;padding:0 var(--e3);border:1px solid var(--borde);
+  border-radius:999px;background:var(--superficie);color:var(--texto);
+  font:inherit;font-size:.875rem;cursor:pointer}
+.chip.activo{background:var(--acento);border-color:var(--acento);color:#fff;font-weight:600}
+.chip:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+.oculto{display:none!important}
 .campo{display:flex;flex-direction:column;gap:var(--e1);min-width:0}
 .campo label{font-size:.8125rem;letter-spacing:.02em;text-transform:uppercase;
   color:var(--texto-suave);font-weight:600}
@@ -133,7 +142,7 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <main>
 <header>
 <h1>Empleo · convocatorias y bolsas de informática</h1>
-<p class="meta">Actualizado hace 2,6 h</p>
+<p class="meta">Actualizado hace 2,8 h</p>
 
 <p class="calendario"><a class="boton-ics" href="plazos.ics" download>Descargar plazos (.ics)</a> <span class="nota-ics">Sin registro: se abre en tu calendario.</span></p>
 </header>
@@ -143,14 +152,46 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <div class="dato"><dt>Fuentes OK</dt><dd>23/23</dd></div>
 <div class="dato"><dt>Nuevas (24 h)</dt><dd>0</dd></div>
 <div class="dato"><dt>% con plazo interpretado</dt><dd>48 %</dd></div>
-<div class="dato"><dt>Horas desde la pasada</dt><dd>2,6 h</dd></div>
+<div class="dato"><dt>Horas desde la pasada</dt><dd>2,8 h</dd></div>
 <div class="dato"><dt>Fichas perdidas en auditoría</dt><dd>4</dd></div>
 <div class="dato"><dt>Fecha de la auditoría</dt><dd>9 nov. 2026</dd></div>
 </dl>
 </section>
 <div class="filtros">
-<div class="campo"><label for="f-provincia">Provincia</label><select id="f-provincia"><option value="">Todas las provincias</option><option value="Castilla y León">Castilla y León (11)</option><option value="Salamanca">Salamanca (8)</option><option value="Zamora">Zamora (1)</option><option value="Valladolid">Valladolid (7)</option><option value="Soria">Soria (3)</option><option value="Burgos">Burgos (1)</option><option value="Estatal">Estatal (2)</option></select></div>
-<div class="campo"><label for="f-estado">Estado</label><select id="f-estado"><option value="">Todos los estados</option><option value="abierto">Abiertas (2)</option><option value="caducado">Caducadas (14)</option><option value="sinfecha">La fuente no publica plazo (17)</option></select></div>
+<div class="grupo-chips">
+<span class="etiqueta">Estado</span>
+<div class="chips" role="group" aria-label="Filtrar por estado">
+<button type="button" class="chip activo" data-filtro="estado" data-valor="" aria-pressed="true">Todas</button>
+<button type="button" class="chip" data-filtro="estado" data-valor="abierto" aria-pressed="false">Abiertas (2)</button>
+<button type="button" class="chip" data-filtro="estado" data-valor="caducado" aria-pressed="false">Caducadas (14)</button>
+<button type="button" class="chip" data-filtro="estado" data-valor="sinfecha" aria-pressed="false">La fuente no publica plazo (17)</button>
+</div>
+</div>
+<div class="grupo-chips">
+<span class="etiqueta">Tipo de plazo</span>
+<div class="chips" role="group" aria-label="Filtrar por tipo de plazo">
+<button type="button" class="chip activo" data-filtro="tipo" data-valor="" aria-pressed="true">Todos</button>
+<button type="button" class="chip" data-filtro="tipo" data-valor="Inscripción" aria-pressed="false">Inscripción (0)</button>
+<button type="button" class="chip" data-filtro="tipo" data-valor="Méritos-Alegaciones" aria-pressed="false">Méritos-Alegaciones (4)</button>
+<button type="button" class="chip" data-filtro="tipo" data-valor="Informativo" aria-pressed="false">Informativo (29)</button>
+</div>
+</div>
+<div class="grupo-chips">
+<span class="etiqueta">Provincia</span>
+<div class="chips" role="group" aria-label="Filtrar por provincia">
+<button type="button" class="chip activo" data-filtro="provincia" data-valor="" aria-pressed="true">Todas las provincias</button>
+<button type="button" class="chip" data-filtro="provincia" data-valor="Castilla y León" aria-pressed="false">Castilla y León (11)</button>
+<button type="button" class="chip" data-filtro="provincia" data-valor="Salamanca" aria-pressed="false">Salamanca (8)</button>
+<button type="button" class="chip" data-filtro="provincia" data-valor="Zamora" aria-pressed="false">Zamora (1)</button>
+<button type="button" class="chip" data-filtro="provincia" data-valor="Valladolid" aria-pressed="false">Valladolid (7)</button>
+<button type="button" class="chip" data-filtro="provincia" data-valor="Soria" aria-pressed="false">Soria (3)</button>
+<button type="button" class="chip" data-filtro="provincia" data-valor="Burgos" aria-pressed="false">Burgos (1)</button>
+<button type="button" class="chip" data-filtro="provincia" data-valor="Estatal" aria-pressed="false">Estatal (2)</button>
+</div>
+</div>
+<select id="f-provincia" class="oculto" aria-hidden="true" tabindex="-1"><option value="">Todas las provincias</option><option value="Castilla y León">Castilla y León (11)</option><option value="Salamanca">Salamanca (8)</option><option value="Zamora">Zamora (1)</option><option value="Valladolid">Valladolid (7)</option><option value="Soria">Soria (3)</option><option value="Burgos">Burgos (1)</option><option value="Estatal">Estatal (2)</option></select>
+<select id="f-estado" class="oculto" aria-hidden="true" tabindex="-1"><option value="">Todos los estados</option><option value="abierto">Abiertas (2)</option><option value="caducado">Caducadas (14)</option><option value="sinfecha">La fuente no publica plazo (17)</option></select>
+<select id="f-tipo" class="oculto" aria-hidden="true" tabindex="-1"><option value="">Todos los tipos</option><option value="Inscripción">Inscripción (0)</option><option value="Méritos-Alegaciones">Méritos-Alegaciones (4)</option><option value="Informativo">Informativo (29)</option></select>
 </div>
 <section id="sec-solicitar" aria-labelledby="h-solicitar">
 <h2 id="h-solicitar">Solicitar plaza (<span id="cuenta-solicitar">0</span>)</h2>
@@ -267,6 +308,7 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 (function () {
   var fProv = document.getElementById('f-provincia');
   var fEst = document.getElementById('f-estado');
+  var fTipo = document.getElementById('f-tipo');
   var detalles = document.getElementById('caducadas');
   var cuentaSolicitar = document.getElementById('cuenta-solicitar');
   var cuentaOtros = document.getElementById('cuenta-otros');
@@ -281,14 +323,25 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
   function estado(el) { return el.getAttribute('data-estado') || ''; }
   function provincia(el) { return el.getAttribute('data-provincia') || ''; }
   function grupo(el) { return el.getAttribute('data-grupo') || ''; }
+  function tipo(el) { return el.getAttribute('data-tipo') || ''; }
+
+  function marcarChips(nombre, valor) {
+    var botones = document.querySelectorAll('.chip[data-filtro="' + nombre + '"]');
+    for (var i = 0; i < botones.length; i++) {
+      var activo = botones[i].getAttribute('data-valor') === valor;
+      botones[i].classList.toggle('activo', activo);
+      botones[i].setAttribute('aria-pressed', activo ? 'true' : 'false');
+    }
+  }
 
   function aplicar() {
-    var p = fProv.value, e = fEst.value;
+    var p = fProv.value, e = fEst.value, t = fTipo ? fTipo.value : '';
     var solicitar = 0, otros = 0, sinfecha = 0, caducadas = 0;
     var fichas = document.querySelectorAll('.ficha[data-estado]');
     for (var i = 0; i < fichas.length; i++) {
       var el = fichas[i];
-      var vale = (!p || provincia(el) === p) && (!e || estado(el) === e);
+      var vale = (!p || provincia(el) === p) && (!e || estado(el) === e)
+        && (!t || tipo(el) === t);
       el.hidden = !vale;
       if (!vale) { continue; }
       var g = grupo(el);
@@ -301,8 +354,11 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
     if (cuentaOtros) { cuentaOtros.textContent = otros; }
     if (cuentaSinfecha) { cuentaSinfecha.textContent = sinfecha; }
     if (cuentaCaducadas) { cuentaCaducadas.textContent = caducadas; }
+    marcarChips('provincia', p);
+    marcarChips('estado', e);
+    marcarChips('tipo', t);
 
-    var filtrando = !!(p || e);
+    var filtrando = !!(p || e || t);
     var seccionSolicitar = document.getElementById('sec-solicitar');
     var seccionOtros = document.getElementById('sec-otros');
     var seccionSinfecha = document.getElementById('sec-sinfecha');
@@ -341,12 +397,25 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
     }
   }
 
+  var chips = document.querySelectorAll('.chip[data-filtro]');
+  for (var k = 0; k < chips.length; k++) {
+    chips[k].addEventListener('click', function () {
+      var nombre = this.getAttribute('data-filtro');
+      var valor = this.getAttribute('data-valor');
+      var select = nombre === 'estado' ? fEst : (nombre === 'tipo' ? fTipo : fProv);
+      if (select) { select.value = valor; }
+      aplicar();
+    });
+  }
+
   var parametros = new URLSearchParams(window.location.search);
   if (parametros.get('provincia')) { fProv.value = parametros.get('provincia'); }
   if (parametros.get('estado')) { fEst.value = parametros.get('estado'); }
+  if (parametros.get('tipo') && fTipo) { fTipo.value = parametros.get('tipo'); }
   if (parametros.get('caducadas') === '1' && detalles) { detalles.open = true; }
   fProv.addEventListener('change', aplicar);
   fEst.addEventListener('change', aplicar);
+  if (fTipo) { fTipo.addEventListener('change', aplicar); }
   aplicar();
 
   var titulos = document.querySelectorAll('.titulo');
