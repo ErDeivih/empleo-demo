@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-12T00:14:03",
-  "ultima_pasada": "2026-11-12T00:14:03",
+  "generado": "2026-11-12T00:14:20",
+  "ultima_pasada": "2026-11-12T00:14:20",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -27,7 +27,7 @@
     "Ayuntamiento de Salamanca · Bolsas de empleo"
   ],
   "fuentes_error": [],
-  "total_fichas": 33,
+  "total_fichas": 34,
   "items": [
     {
       "id": "6c979786d1f76fcef593ff9183c1f23ec419abd1",
@@ -358,6 +358,16 @@
       "estado_plazo": "caducado",
       "grupo": null,
       "comprobado": "2026-11-11"
+    },
+    {
+      "id": "cd4bdcac37b0364fa467f6ae8ed9a4a0c85ccd23",
+      "titulo": "1 OPERADOR INFORMÁTICO (JOVEL 2026)",
+      "url": "https://www.diputaciondepalencia.es/servicios/empleo/1-operador-informatico-jovel-2026",
+      "fuente": "Palencia · Diputación · Empleo",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": null,
+      "comprobado": "2026-11-12"
     }
   ]
 }
