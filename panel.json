@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-12T17:38:08",
-  "ultima_pasada": "2026-11-12T17:38:08",
+  "generado": "2026-11-13T00:10:02",
+  "ultima_pasada": "2026-11-13T00:10:02",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -37,7 +37,7 @@
       "plazo": "2026-11-19",
       "estado_plazo": "abierto",
       "grupo": "C1",
-      "comprobado": "2026-11-12"
+      "comprobado": "2026-11-13"
     },
     {
       "id": "2c597766ebf0606256d2ded40c60e37d8766e262",
@@ -47,7 +47,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A2",
-      "comprobado": "2026-11-12"
+      "comprobado": "2026-11-13"
     },
     {
       "id": "7da363dfca660b14421b22dd960602ec3f06e014",
@@ -57,7 +57,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A1",
-      "comprobado": "2026-11-12"
+      "comprobado": "2026-11-13"
     },
     {
       "id": "1a10ef7263224efcdb664ce52a2877f068284631",
@@ -67,7 +67,7 @@
       "plazo": "2026-11-16",
       "estado_plazo": "abierto",
       "grupo": "A1",
-      "comprobado": "2026-11-12"
+      "comprobado": "2026-11-13"
     },
     {
       "id": "72afba301587a9932e3f06995861d0da31cc4e4f",
@@ -77,7 +77,7 @@
       "plazo": "2026-04-13",
       "estado_plazo": "caducado",
       "grupo": "A2",
-      "comprobado": "2026-11-12"
+      "comprobado": "2026-11-13"
     },
     {
       "id": "cd28d680a7621dfb2025f4c0fbee1df8d07d6e8c",
@@ -87,7 +87,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "C1",
-      "comprobado": "2026-11-12"
+      "comprobado": "2026-11-13"
     },
     {
       "id": "1b4b1e95355c4570811dd6ddb6eb63e8b0438a4d",
@@ -97,7 +97,7 @@
       "plazo": "2026-04-13",
       "estado_plazo": "caducado",
       "grupo": "C1",
-      "comprobado": "2026-11-12"
+      "comprobado": "2026-11-13"
     },
     {
       "id": "6dc69501ebd3556d68dc0977c22b658f79a4131f",
@@ -107,7 +107,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A1",
-      "comprobado": "2026-11-12"
+      "comprobado": "2026-11-13"
     },
     {
       "id": "4952c5c00ecbef6fec13650528331138c1ecd94c",
