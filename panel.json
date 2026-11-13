@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-13T09:10:26",
-  "ultima_pasada": "2026-11-13T09:10:26",
+  "generado": "2026-11-13T09:11:35",
+  "ultima_pasada": "2026-11-13T09:11:35",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -27,7 +27,7 @@
     "Ayuntamiento de Salamanca · Bolsas de empleo"
   ],
   "fuentes_error": [],
-  "total_fichas": 34,
+  "total_fichas": 35,
   "items": [
     {
       "id": "6c979786d1f76fcef593ff9183c1f23ec419abd1",
@@ -368,6 +368,16 @@
       "estado_plazo": "sin_fecha",
       "grupo": null,
       "comprobado": "2026-11-12"
+    },
+    {
+      "id": "32e55af25d6e824614c38c8933682c7dc6cf93af",
+      "titulo": "Resolución de 6 de noviembre de 2026, de la Universidad de Zaragoza, por la que se publica la convocatoria de proceso selectivo para ingreso, por el sistema general de acceso libre y promoción interna, en la Escala de Técnicos Medios de Informática.",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23809",
+      "fuente": "BOE · Oposiciones y concursos (sección II.B)",
+      "plazo": "2026-11-26",
+      "estado_plazo": "abierto",
+      "grupo": null,
+      "comprobado": "2026-11-13"
     }
   ]
 }

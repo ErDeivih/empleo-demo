@@ -151,7 +151,7 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <dl class="datos">
 <div class="dato"><dt>Fuentes OK</dt><dd>23/23</dd></div>
 <div class="dato"><dt>Nuevas (24 h)</dt><dd>0</dd></div>
-<div class="dato"><dt>% con plazo interpretado</dt><dd>47 %</dd></div>
+<div class="dato"><dt>% con plazo interpretado</dt><dd>49 %</dd></div>
 <div class="dato"><dt>Horas desde la pasada</dt><dd>0,0 h</dd></div>
 <div class="dato"><dt>Fichas perdidas en auditoría</dt><dd>4</dd></div>
 <div class="dato"><dt>Fecha de la auditoría</dt><dd>9 nov. 2026</dd></div>
@@ -162,7 +162,7 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <span class="etiqueta">Estado</span>
 <div class="chips" role="group" aria-label="Filtrar por estado">
 <button type="button" class="chip activo" data-filtro="estado" data-valor="" aria-pressed="true">Todas</button>
-<button type="button" class="chip" data-filtro="estado" data-valor="abierto" aria-pressed="false">Abiertas (2)</button>
+<button type="button" class="chip" data-filtro="estado" data-valor="abierto" aria-pressed="false">Abiertas (3)</button>
 <button type="button" class="chip" data-filtro="estado" data-valor="caducado" aria-pressed="false">Caducadas (14)</button>
 <button type="button" class="chip" data-filtro="estado" data-valor="sinfecha" aria-pressed="false">La fuente no publica plazo (18)</button>
 </div>
@@ -173,7 +173,7 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <button type="button" class="chip activo" data-filtro="tipo" data-valor="" aria-pressed="true">Todos</button>
 <button type="button" class="chip" data-filtro="tipo" data-valor="Inscripción" aria-pressed="false">Inscripción (0)</button>
 <button type="button" class="chip" data-filtro="tipo" data-valor="Méritos-Alegaciones" aria-pressed="false">Méritos-Alegaciones (4)</button>
-<button type="button" class="chip" data-filtro="tipo" data-valor="Informativo" aria-pressed="false">Informativo (30)</button>
+<button type="button" class="chip" data-filtro="tipo" data-valor="Informativo" aria-pressed="false">Informativo (31)</button>
 </div>
 </div>
 <div class="grupo-chips">
@@ -187,12 +187,12 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <button type="button" class="chip" data-filtro="provincia" data-valor="Palencia" aria-pressed="false">Palencia (1)</button>
 <button type="button" class="chip" data-filtro="provincia" data-valor="Soria" aria-pressed="false">Soria (3)</button>
 <button type="button" class="chip" data-filtro="provincia" data-valor="Burgos" aria-pressed="false">Burgos (1)</button>
-<button type="button" class="chip" data-filtro="provincia" data-valor="Estatal" aria-pressed="false">Estatal (2)</button>
+<button type="button" class="chip" data-filtro="provincia" data-valor="Estatal" aria-pressed="false">Estatal (3)</button>
 </div>
 </div>
-<select id="f-provincia" class="oculto" aria-hidden="true" tabindex="-1"><option value="">Todas las provincias</option><option value="Castilla y León">Castilla y León (11)</option><option value="Salamanca">Salamanca (8)</option><option value="Zamora">Zamora (1)</option><option value="Valladolid">Valladolid (7)</option><option value="Palencia">Palencia (1)</option><option value="Soria">Soria (3)</option><option value="Burgos">Burgos (1)</option><option value="Estatal">Estatal (2)</option></select>
-<select id="f-estado" class="oculto" aria-hidden="true" tabindex="-1"><option value="">Todos los estados</option><option value="abierto">Abiertas (2)</option><option value="caducado">Caducadas (14)</option><option value="sinfecha">La fuente no publica plazo (18)</option></select>
-<select id="f-tipo" class="oculto" aria-hidden="true" tabindex="-1"><option value="">Todos los tipos</option><option value="Inscripción">Inscripción (0)</option><option value="Méritos-Alegaciones">Méritos-Alegaciones (4)</option><option value="Informativo">Informativo (30)</option></select>
+<select id="f-provincia" class="oculto" aria-hidden="true" tabindex="-1"><option value="">Todas las provincias</option><option value="Castilla y León">Castilla y León (11)</option><option value="Salamanca">Salamanca (8)</option><option value="Zamora">Zamora (1)</option><option value="Valladolid">Valladolid (7)</option><option value="Palencia">Palencia (1)</option><option value="Soria">Soria (3)</option><option value="Burgos">Burgos (1)</option><option value="Estatal">Estatal (3)</option></select>
+<select id="f-estado" class="oculto" aria-hidden="true" tabindex="-1"><option value="">Todos los estados</option><option value="abierto">Abiertas (3)</option><option value="caducado">Caducadas (14)</option><option value="sinfecha">La fuente no publica plazo (18)</option></select>
+<select id="f-tipo" class="oculto" aria-hidden="true" tabindex="-1"><option value="">Todos los tipos</option><option value="Inscripción">Inscripción (0)</option><option value="Méritos-Alegaciones">Méritos-Alegaciones (4)</option><option value="Informativo">Informativo (31)</option></select>
 </div>
 <section id="sec-solicitar" aria-labelledby="h-solicitar">
 <h2 id="h-solicitar">Solicitar plaza (<span id="cuenta-solicitar">0</span>)</h2>
@@ -201,11 +201,12 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 </ul>
 </section>
 <section id="sec-otros" aria-labelledby="h-otros">
-<h2 id="h-otros">Trámites en curso (<span id="cuenta-otros">2</span>)</h2>
+<h2 id="h-otros">Trámites en curso (<span id="cuenta-otros">3</span>)</h2>
 <p class="aviso" id="vacio-otros" hidden>Ahora mismo no hay trámites en curso.</p>
 <ul class="fichas">
 <li class="ficha" data-provincia="Castilla y León" data-estado="abierto" data-grupo="otros" data-tipo="Méritos-Alegaciones"><p class="plazo-tipo">19 nov · Méritos-Alegaciones · quedan 6 días</p><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a de Soporte Informático (2023/2024) — Valoración Provisional de Méritos"><span class="titulo-texto">Técnico-a de Soporte Informático (2023/2024) — Valoración Provisional de Méritos</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="organismo">Junta de CyL · Convocatorias · Grupo C1 · Castilla y León</p><p class="comprobado">Comprobado el 13 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285519792195/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
 <li class="ficha" data-provincia="Castilla y León" data-estado="abierto" data-grupo="otros" data-tipo="Méritos-Alegaciones"><p class="plazo-tipo">16 nov · Méritos-Alegaciones · quedan 3 días</p><h3><button type="button" class="titulo" aria-expanded="false" title="Técnico-a Superior de Informática (2022/2024) — Aprobados fase oposición y plazo de presentación de méritos"><span class="titulo-texto">Técnico-a Superior de Informática (2022/2024) — Aprobados fase oposición y plazo de presentación de méritos</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="organismo">Junta de CyL · Convocatorias · Grupo A1 · Castilla y León</p><p class="comprobado">Comprobado el 13 nov.</p><p class="acciones"><a class="accion" href="https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285519739316/Empleo" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
+<li class="ficha" data-provincia="Estatal" data-estado="abierto" data-grupo="otros" data-tipo="Informativo"><p class="plazo-tipo">26 nov · Informativo · quedan 13 días</p><h3><button type="button" class="titulo" aria-expanded="false" title="Resolución de 6 de noviembre de 2026, de la Universidad de Zaragoza, por la que se publica la convocatoria de proceso selectivo para ingreso, por el sistema general de acceso libre y promoción interna, en la Escala de Técnicos Medios de Informática."><span class="titulo-texto">Resolución de 6 de noviembre de 2026, de la Universidad de Zaragoza, por la que se publica la convocatoria de proceso selectivo para ingreso, por el sistema general de acceso libre y promoción interna, en la Escala de Técnicos Medios de Informática.</span><span class="flecha" aria-hidden="true">▾</span></button></h3><p class="organismo">BOE · Oposiciones y concursos (sección II.B) · Estatal</p><p class="comprobado">Comprobado el 13 nov.</p><p class="acciones"><a class="accion" href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23809" target="_blank" rel="noopener">Ver anuncio oficial <span aria-hidden="true">↗</span></a></p></li>
 </ul>
 </section>
 <section id="sec-sinfecha" aria-labelledby="h-sinfecha">
@@ -278,13 +279,13 @@ footer{border-top:1px solid var(--borde);padding-top:var(--e3);color:var(--texto
 <section id="calidad-fuentes" aria-labelledby="h-fuentes">
 <h2 id="h-fuentes">Calidad por fuente (23)</h2>
 <ul class="fuentes">
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Convocatorias</span><span class="fuente-datos">Última lectura hoy, 09:00 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 10 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Empleo Temporal y bolsas</span><span class="fuente-datos">Última lectura hoy, 09:09 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace menos de 1 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Titulado Superior de Informática (A1)</span><span class="fuente-datos">Última lectura hoy, 09:09 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace menos de 1 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Gestión Informática (A2)</span><span class="fuente-datos">Última lectura hoy, 09:09 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace menos de 1 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Técnico/a Especialista en Informática (C1) · Salamanca</span><span class="fuente-datos">Última lectura hoy, 09:10 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace menos de 1 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Universidad de Salamanca · Adscripción temporal PTGAS</span><span class="fuente-datos">Última lectura hoy, 00:10 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 8 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
-<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">BOE · Oposiciones y concursos (sección II.B)</span><span class="fuente-datos">Última lectura hoy, 00:10 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 8 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Convocatorias</span><span class="fuente-datos">Última lectura hoy, 09:00 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 11 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Junta de CyL · Empleo Temporal y bolsas</span><span class="fuente-datos">Última lectura hoy, 09:09 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Titulado Superior de Informática (A1)</span><span class="fuente-datos">Última lectura hoy, 09:09 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Gestión Informática (A2)</span><span class="fuente-datos">Última lectura hoy, 09:09 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">SACYL · Técnico/a Especialista en Informática (C1) · Salamanca</span><span class="fuente-datos">Última lectura hoy, 09:10 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Universidad de Salamanca · Adscripción temporal PTGAS</span><span class="fuente-datos">Última lectura hoy, 09:10 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 1 min</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
+<li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">BOE · Oposiciones y concursos (sección II.B)</span><span class="fuente-datos">Última lectura hoy, 00:10 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 9 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
 <li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">AEAT · Trabajar en la Agencia Tributaria</span><span class="fuente-datos">Última lectura ayer, 17:38 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 15 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
 <li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">Zamora · Boletín Oficial de la Provincia</span><span class="fuente-datos">Última lectura ayer, 17:38 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 15 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>
 <li class="fuente-fila" data-estado="sin_novedades"><span class="fuente-nombre">León · Boletín Oficial de la Provincia</span><span class="fuente-datos">Última lectura ayer, 17:38 · Nuevas 0</span><span class="fuente-antiguedad">Antigüedad hace 15 h</span><span class="chip-fuente sin-novedades">Sin novedades</span></li>

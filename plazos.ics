@@ -7,7 +7,7 @@ X-WR-CALNAME:Plazos de empleo público
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:1a10ef7263224efcdb66@empleo.local
-DTSTAMP:20261113T081026Z
+DTSTAMP:20261113T081135Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:Plazo: Técnico-a Superior de Informática (2022/2024) — Aprobado
@@ -28,7 +28,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:6c979786d1f76fcef593@empleo.local
-DTSTAMP:20261113T081026Z
+DTSTAMP:20261113T081135Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Plazo: Técnico-a de Soporte Informático (2023/2024) — Valoraci
@@ -45,6 +45,29 @@ TRIGGER:-P1D
 ACTION:DISPLAY
 DESCRIPTION:Último día: Técnico-a de Soporte Informático (2023/2024) 
  — Valoración Provisional de Méritos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:32e55af25d6e824614c3@empleo.local
+DTSTAMP:20261113T081135Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Plazo: Resolución de 6 de noviembre de 2026\, de la Universidad de
+  Zaragoza\, por la que se publica la convocatoria de proceso selectivo par
+ a ingreso\, por el sistema general de acceso libre y promoción interna\, 
+ en la Escala de Técnicos Medios de Informática.
+DESCRIPTION:Plazo · BOE · Oposiciones y concursos (sección II.B) · http
+ s://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23809
+URL:https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23809
+CATEGORIES:Empleo público
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Último día: Resolución de 6 de noviembre de 2026\, de la Uni
+ versidad de Zaragoza\, por la que se publica la convocatoria de proceso se
+ lectivo para ingreso\, por el sistema general de acceso libre y promoción
+  interna\, en la Escala de Técnicos Medios de Informática.
 END:VALARM
 END:VEVENT
 END:VCALENDAR
