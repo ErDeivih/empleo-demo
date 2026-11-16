@@ -6,29 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Plazos de empleo público
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
-UID:1a10ef7263224efcdb66@empleo.local
-DTSTAMP:20261116T104325Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261117
-SUMMARY:Plazo: Técnico-a Superior de Informática (2022/2024) — Aprobado
- s fase oposición y plazo de presentación de méritos
-DESCRIPTION:Aportar méritos · Junta de CyL · Convocatorias · https://em
- pleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/12772276
- 14255/Convocatoria/1285519739316/Empleo
-URL:https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Det
- alle/1277227614255/Convocatoria/1285519739316/Empleo
-CATEGORIES:Empleo público
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Último día: Técnico-a Superior de Informática (2022/2024) 
- — Aprobados fase oposición y plazo de presentación de méritos
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:6c979786d1f76fcef593@empleo.local
-DTSTAMP:20261116T104325Z
+DTSTAMP:20261116T231004Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Plazo: Técnico-a de Soporte Informático (2023/2024) — Valoraci
@@ -49,7 +28,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:32e55af25d6e824614c3@empleo.local
-DTSTAMP:20261116T104325Z
+DTSTAMP:20261116T231004Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Plazo: Resolución de 6 de noviembre de 2026\, de la Universidad de
@@ -68,6 +47,25 @@ DESCRIPTION:Último día: Resolución de 6 de noviembre de 2026\, de la Uni
  versidad de Zaragoza\, por la que se publica la convocatoria de proceso se
  lectivo para ingreso\, por el sistema general de acceso libre y promoción
   interna\, en la Escala de Técnicos Medios de Informática.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:20dc267d80fbe456e697@empleo.local
+DTSTAMP:20261116T231004Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Plazo: Técnico-a Superior en Informática (2025)
+DESCRIPTION:Plazo · Junta de CyL · Convocatorias · https://empleopublico
+ .jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convo
+ catoria/1285698311588/Empleo
+URL:https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Det
+ alle/1277227614255/Convocatoria/1285698311588/Empleo
+CATEGORIES:Empleo público
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Último día: Técnico-a Superior en Informática (2025)
 END:VALARM
 END:VEVENT
 END:VCALENDAR
