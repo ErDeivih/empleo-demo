@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-18T09:35:34",
-  "ultima_pasada": "2026-11-18T09:35:34",
+  "generado": "2026-11-18T19:22:16",
+  "ultima_pasada": "2026-11-18T19:22:16",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -27,7 +27,7 @@
     "Ayuntamiento de Salamanca · Bolsas de empleo"
   ],
   "fuentes_error": [],
-  "total_fichas": 36,
+  "total_fichas": 37,
   "items": [
     {
       "id": "6c979786d1f76fcef593ff9183c1f23ec419abd1",
@@ -387,6 +387,16 @@
       "plazo": "2026-12-16",
       "estado_plazo": "abierto",
       "grupo": "A1",
+      "comprobado": "2026-11-18"
+    },
+    {
+      "id": "a4b2e413138fa680dbcf3cfe6a48ddb74af31f74",
+      "titulo": "Técnico-a de Soporte Informático (2025)",
+      "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285699039552/Empleo",
+      "fuente": "Junta de CyL · Convocatorias",
+      "plazo": "2026-12-18",
+      "estado_plazo": "abierto",
+      "grupo": "C1",
       "comprobado": "2026-11-18"
     }
   ]
