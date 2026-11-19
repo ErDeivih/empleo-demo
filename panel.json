@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-19T10:23:40",
-  "ultima_pasada": "2026-11-19T10:23:40",
+  "generado": "2026-11-19T10:24:54",
+  "ultima_pasada": "2026-11-19T10:24:54",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -27,7 +27,7 @@
     "Ayuntamiento de Salamanca · Bolsas de empleo"
   ],
   "fuentes_error": [],
-  "total_fichas": 37,
+  "total_fichas": 38,
   "items": [
     {
       "id": "6c979786d1f76fcef593ff9183c1f23ec419abd1",
@@ -397,6 +397,16 @@
       "plazo": "2026-12-18",
       "estado_plazo": "abierto",
       "grupo": "C1",
+      "comprobado": "2026-11-19"
+    },
+    {
+      "id": "cb1d8a5bf7bacc68ffcc1433e8d56396cebaa947",
+      "titulo": "Resolución de 11 de noviembre de 2026, del Instituto Nacional de Gestión Sanitaria, por la que se convoca proceso selectivo por concurso-oposición, por el sistema general de acceso libre, para acceso a la condición de personal estatutario fijo en plazas de la categoría de Técnico/a Titulado/a Medio en Informática.",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24218",
+      "fuente": "BOE · Oposiciones y concursos (sección II.B)",
+      "plazo": "2026-12-09",
+      "estado_plazo": "abierto",
+      "grupo": null,
       "comprobado": "2026-11-19"
     }
   ]

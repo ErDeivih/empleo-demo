@@ -7,7 +7,7 @@ X-WR-CALNAME:Plazos de empleo público
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:6c979786d1f76fcef593@empleo.local
-DTSTAMP:20261119T092340Z
+DTSTAMP:20261119T092454Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Plazo: Técnico-a de Soporte Informático (2023/2024) — Valoraci
@@ -28,7 +28,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:32e55af25d6e824614c3@empleo.local
-DTSTAMP:20261119T092340Z
+DTSTAMP:20261119T092454Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Plazo: Resolución de 6 de noviembre de 2026\, de la Universidad de
@@ -50,8 +50,33 @@ DESCRIPTION:Último día: Resolución de 6 de noviembre de 2026\, de la Uni
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:cb1d8a5bf7bacc68ffcc@empleo.local
+DTSTAMP:20261119T092454Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Plazo: Resolución de 11 de noviembre de 2026\, del Instituto Nacio
+ nal de Gestión Sanitaria\, por la que se convoca proceso selectivo por co
+ ncurso-oposición\, por el sistema general de acceso libre\, para acceso a
+  la condición de personal estatutario fijo en plazas de la categoría de 
+ Técnico/a Titulado/a Medio en Informática.
+DESCRIPTION:Plazo · BOE · Oposiciones y concursos (sección II.B) · http
+ s://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24218
+URL:https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24218
+CATEGORIES:Empleo público
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Último día: Resolución de 11 de noviembre de 2026\, del Inst
+ ituto Nacional de Gestión Sanitaria\, por la que se convoca proceso selec
+ tivo por concurso-oposición\, por el sistema general de acceso libre\, pa
+ ra acceso a la condición de personal estatutario fijo en plazas de la cat
+ egoría de Técnico/a Titulado/a Medio en Informática.
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:20dc267d80fbe456e697@empleo.local
-DTSTAMP:20261119T092340Z
+DTSTAMP:20261119T092454Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Plazo: Técnico-a Superior en Informática (2025)
@@ -70,7 +95,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a4b2e413138fa680dbcf@empleo.local
-DTSTAMP:20261119T092340Z
+DTSTAMP:20261119T092454Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Plazo: Técnico-a de Soporte Informático (2025)
