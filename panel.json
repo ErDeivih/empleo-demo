@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-24T00:14:27",
-  "ultima_pasada": "2026-11-24T00:14:27",
+  "generado": "2026-11-24T00:14:36",
+  "ultima_pasada": "2026-11-24T00:14:36",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -300,7 +300,7 @@
       "plazo": "2023-05-08",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-23"
+      "comprobado": "2026-11-24"
     },
     {
       "id": "2ecfa6965b077659749fccb9b4eceebf1e584122",
@@ -310,7 +310,7 @@
       "plazo": "2023-02-27",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-23"
+      "comprobado": "2026-11-24"
     },
     {
       "id": "059584540923aebeb33cafe413675df555bbe3b0",
@@ -320,7 +320,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": null,
-      "comprobado": "2026-11-23"
+      "comprobado": "2026-11-24"
     },
     {
       "id": "1d7dc204904832598e61cdb18519f361f1caab01",
