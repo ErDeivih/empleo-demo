@@ -1,12 +1,15 @@
 {
-  "generado": "2026-11-23T11:52:14",
-  "ultima_pasada": "2026-11-23T11:52:14",
+  "generado": "2026-11-23T19:34:31",
+  "ultima_pasada": "2026-11-23T19:34:31",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
     "SACYL · Titulado Superior de Informática (A1)",
     "SACYL · Gestión Informática (A2)",
     "SACYL · Técnico/a Especialista en Informática (C1) · Salamanca",
+    "SACYL · Técnico/a Especialista en Informática (C1) · Zamora",
+    "SACYL · Técnico/a Especialista en Informática (C1) · Valladolid",
+    "SACYL · Técnico/a Especialista en Informática (C1) · Ávila",
     "Universidad de Salamanca · Adscripción temporal PTGAS",
     "BOE · Oposiciones y concursos (sección II.B)",
     "AEAT · Trabajar en la Agencia Tributaria",
@@ -27,7 +30,7 @@
     "Ayuntamiento de Salamanca · Bolsas de empleo"
   ],
   "fuentes_error": [],
-  "total_fichas": 38,
+  "total_fichas": 43,
   "items": [
     {
       "id": "6c979786d1f76fcef593ff9183c1f23ec419abd1",
@@ -407,6 +410,56 @@
       "plazo": "2026-12-09",
       "estado_plazo": "abierto",
       "grupo": null,
+      "comprobado": "2026-11-23"
+    },
+    {
+      "id": "3be785815457d09033b45390e58ef3c80e1d2dbe",
+      "titulo": "Convocatoria T.E en Informática",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/zamora.ficheros/3084221-Convocatoira%20T.E%20en%20Inform%C3%A1tica.pdf",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1) · Zamora",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "C1",
+      "comprobado": "2026-11-23"
+    },
+    {
+      "id": "28a2604801b50dfb1532b4eb8f100cb3d2fdf8e8",
+      "titulo": "CONVOCATORIA 2 PLAZAS TÉCNICO ESPECIALISTA DE INFORMÁTICA (GRUPO C1)",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/valladolid.ficheros/2985268-CONVOCATORIA%202%20PLAZAS%20T%C3%89CNICO%20ESPECIALISTA%20DE%20INFORM%C3%81TICA%20%28GRUPO%20C1%29.pdf",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1) · Valladolid",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "C1",
+      "comprobado": "2026-11-23"
+    },
+    {
+      "id": "b6e236f1da696fdb7e4ab8cc0df23b4bb894eef9",
+      "titulo": "5. Resolución Puntuaciones definitivas y adjudicación de plazas.",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/avila.ficheros/2782845-5.%20Puntuaciones%20definitivas%20y%20adjudicaci%C3%B3n%20de%20plazas..pdf",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1) · Ávila",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "C1",
+      "comprobado": "2026-11-23"
+    },
+    {
+      "id": "b7d243b12ab59a0d4a66f3cc0ce20a3d304c6056",
+      "titulo": "4. Resolución por la que se publican las puntaciones provisionales obtenidas en las dos fases del proceso selectivo",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/avila.ficheros/2774036-4.%20Puntuaciones%20provisionales%20t%C3%A9cnico%20especialista%20informatica.pdf",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1) · Ávila",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "C1",
+      "comprobado": "2026-11-23"
+    },
+    {
+      "id": "f40c0fc3f3822f0613f0b8c7c62825263c61a1b0",
+      "titulo": "1. Convocatoria técnico especialista en informática",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/avila.ficheros/2719045-convocatoria%20%20tecnico%20especialista%20en%20inform%C3%A1tica.pdf",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1) · Ávila",
+      "plazo": "2024-05-17",
+      "estado_plazo": "caducado",
+      "grupo": "C1",
       "comprobado": "2026-11-23"
     }
   ]
