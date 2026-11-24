@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-24T11:30:40",
-  "ultima_pasada": "2026-11-24T01:00:08",
+  "generado": "2026-11-24T17:11:57",
+  "ultima_pasada": "2026-11-24T17:11:57",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -34,11 +34,11 @@
   "items": [
     {
       "id": "6c979786d1f76fcef593ff9183c1f23ec419abd1",
-      "titulo": "Técnico-a de Soporte Informático (2023/2024) — Valoración Provisional de Méritos",
+      "titulo": "Técnico-a de Soporte Informático (2023/2024) — Valoración Definitiva de Méritos y Aspirantes que superan el proceso selectivo",
       "url": "https://empleopublico.jcyl.es/web/jcyl/EmpleoPublico/es/Plantilla100Detalle/1277227614255/Convocatoria/1285519792195/Empleo",
       "fuente": "Junta de CyL · Convocatorias",
-      "plazo": "2026-11-19",
-      "estado_plazo": "caducado",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
       "grupo": "C1",
       "comprobado": "2026-11-24"
     },
