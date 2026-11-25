@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-25T11:44:20",
-  "ultima_pasada": "2026-11-25T11:41:54",
+  "generado": "2026-11-25T17:00:20",
+  "ultima_pasada": "2026-11-25T17:00:20",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -21,6 +21,7 @@
     "Palencia · Ayuntamiento · Oposiciones",
     "Soria · Diputación · Bolsas de empleo",
     "Valladolid · Diputación · Convocatorias y oposiciones",
+    "Valladolid · Tablón oficial de empleo público (Ayuntamiento)",
     "Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina)",
     "Ayuntamiento de Salamanca · Bolsas de empleo"
   ],
@@ -28,8 +29,7 @@
     "SACYL · Técnico/a Especialista en Informática (C1) · Salamanca",
     "SACYL · Técnico/a Especialista en Informática (C1) · Zamora",
     "SACYL · Técnico/a Especialista en Informática (C1) · Valladolid",
-    "SACYL · Técnico/a Especialista en Informática (C1) · Ávila",
-    "Valladolid · Tablón oficial de empleo público (Ayuntamiento)"
+    "SACYL · Técnico/a Especialista en Informática (C1) · Ávila"
   ],
   "total_fichas": 51,
   "items": [
