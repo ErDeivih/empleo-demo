@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-26T19:01:24",
-  "ultima_pasada": "2026-11-26T19:01:23",
+  "generado": "2026-11-27T00:47:53",
+  "ultima_pasada": "2026-11-27T00:47:53",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -31,7 +31,7 @@
     "SACYL · Técnico/a Especialista en Informática (C1) · Valladolid",
     "SACYL · Técnico/a Especialista en Informática (C1) · Ávila"
   ],
-  "total_fichas": 51,
+  "total_fichas": 53,
   "items": [
     {
       "id": "6c979786d1f76fcef593ff9183c1f23ec419abd1",
@@ -379,7 +379,7 @@
       "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23809",
       "fuente": "BOE · Oposiciones y concursos (sección II.B)",
       "plazo": "2026-11-26",
-      "estado_plazo": "abierto",
+      "estado_plazo": "caducado",
       "grupo": null,
       "comprobado": "2026-11-26"
     },
@@ -542,6 +542,26 @@
       "estado_plazo": "sin_fecha",
       "grupo": "A2",
       "comprobado": "2026-11-26"
+    },
+    {
+      "id": "9f91865e3b1858bd5ec9dec95290af026b73e132",
+      "titulo": "Técnico/a Especialista en Informática (C1) — Burgos",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/convocatorias-especificas/tecnico-especialista-informatica/burgos",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1)",
+      "plazo": null,
+      "estado_plazo": "sin_fecha",
+      "grupo": "C1",
+      "comprobado": "2026-11-27"
+    },
+    {
+      "id": "82d40da9fe6243dde2988a1ec3691d83144ebb83",
+      "titulo": "Convocatoria T. E. Informatica 2026",
+      "url": "https://www.saludcastillayleon.es/profesionales/es/convocatorias-especificas/tecnico-especialista-informatica/burgos.ficheros/3468645-Convocatoria%20T.%20E.%20Informatica%202026.pdf",
+      "fuente": "SACYL · Técnico/a Especialista en Informática (C1) · Burgos",
+      "plazo": "2026-12-08",
+      "estado_plazo": "abierto",
+      "grupo": "C1",
+      "comprobado": "2026-11-27"
     }
   ]
 }

@@ -6,31 +6,29 @@ METHOD:PUBLISH
 X-WR-CALNAME:Plazos de empleo público
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
-UID:32e55af25d6e824614c3@empleo.local
-DTSTAMP:20261126T180124Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:Plazo: Resolución de 6 de noviembre de 2026\, de la Universidad de
-  Zaragoza\, por la que se publica la convocatoria de proceso selectivo par
- a ingreso\, por el sistema general de acceso libre y promoción interna\, 
- en la Escala de Técnicos Medios de Informática.
-DESCRIPTION:Plazo · BOE · Oposiciones y concursos (sección II.B) · http
- s://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23809
-URL:https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-23809
+UID:82d40da9fe6243dde298@empleo.local
+DTSTAMP:20261126T234753Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Plazo: Convocatoria T. E. Informatica 2026
+DESCRIPTION:Plazo · SACYL · Técnico/a Especialista en Informática (C1) 
+ · Burgos · https://www.saludcastillayleon.es/profesionales/es/convocator
+ ias-especificas/tecnico-especialista-informatica/burgos.ficheros/3468645-C
+ onvocatoria%20T.%20E.%20Informatica%202026.pdf
+URL:https://www.saludcastillayleon.es/profesionales/es/convocatorias-especi
+ ficas/tecnico-especialista-informatica/burgos.ficheros/3468645-Convocatori
+ a%20T.%20E.%20Informatica%202026.pdf
 CATEGORIES:Empleo público
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
-DESCRIPTION:Último día: Resolución de 6 de noviembre de 2026\, de la Uni
- versidad de Zaragoza\, por la que se publica la convocatoria de proceso se
- lectivo para ingreso\, por el sistema general de acceso libre y promoción
-  interna\, en la Escala de Técnicos Medios de Informática.
+DESCRIPTION:Último día: Convocatoria T. E. Informatica 2026
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cb1d8a5bf7bacc68ffcc@empleo.local
-DTSTAMP:20261126T180124Z
+DTSTAMP:20261126T234753Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Plazo: Resolución de 11 de noviembre de 2026\, del Instituto Nacio
@@ -55,7 +53,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20dc267d80fbe456e697@empleo.local
-DTSTAMP:20261126T180124Z
+DTSTAMP:20261126T234753Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Plazo: Técnico-a Superior en Informática (2025)
@@ -74,7 +72,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a4b2e413138fa680dbcf@empleo.local
-DTSTAMP:20261126T180124Z
+DTSTAMP:20261126T234753Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Plazo: Técnico-a de Soporte Informático (2025)
