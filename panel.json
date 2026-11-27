@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-27T00:47:53",
-  "ultima_pasada": "2026-11-27T00:47:53",
+  "generado": "2026-11-27T01:02:12",
+  "ultima_pasada": "2026-11-27T01:02:12",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -23,14 +23,11 @@
     "Valladolid · Diputación · Convocatorias y oposiciones",
     "Valladolid · Tablón oficial de empleo público (Ayuntamiento)",
     "Diputación de Salamanca · Procesos selectivos y bolsas (Lasalina)",
-    "Ayuntamiento de Salamanca · Bolsas de empleo"
+    "Ayuntamiento de Salamanca · Bolsas de empleo",
+    "SACYL · Técnico/a Especialista en Informática (C1)",
+    "SACYL · Técnico/a Especialista en Informática (C1) · Burgos"
   ],
-  "fuentes_error": [
-    "SACYL · Técnico/a Especialista en Informática (C1) · Salamanca",
-    "SACYL · Técnico/a Especialista en Informática (C1) · Zamora",
-    "SACYL · Técnico/a Especialista en Informática (C1) · Valladolid",
-    "SACYL · Técnico/a Especialista en Informática (C1) · Ávila"
-  ],
+  "fuentes_error": [],
   "total_fichas": 53,
   "items": [
     {
@@ -41,7 +38,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "C1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "2c597766ebf0606256d2ded40c60e37d8766e262",
@@ -51,7 +48,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A2",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "7da363dfca660b14421b22dd960602ec3f06e014",
@@ -61,7 +58,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "1a10ef7263224efcdb664ce52a2877f068284631",
@@ -71,7 +68,7 @@
       "plazo": "2026-11-16",
       "estado_plazo": "caducado",
       "grupo": "A1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "72afba301587a9932e3f06995861d0da31cc4e4f",
@@ -81,7 +78,7 @@
       "plazo": "2026-04-13",
       "estado_plazo": "caducado",
       "grupo": "A2",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "cd28d680a7621dfb2025f4c0fbee1df8d07d6e8c",
@@ -91,7 +88,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "C1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "1b4b1e95355c4570811dd6ddb6eb63e8b0438a4d",
@@ -101,7 +98,7 @@
       "plazo": "2026-04-13",
       "estado_plazo": "caducado",
       "grupo": "C1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "6dc69501ebd3556d68dc0977c22b658f79a4131f",
@@ -111,7 +108,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "4952c5c00ecbef6fec13650528331138c1ecd94c",
@@ -231,7 +228,7 @@
       "plazo": "2026-05-06",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "01b6b279d8d073dd470acec723a93817e8d7ad58",
@@ -261,7 +258,7 @@
       "plazo": "2025-05-23",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "93ffee014ab21fa34c5aaa4ab1cd2ad4474d6958",
@@ -271,7 +268,7 @@
       "plazo": "2023-06-19",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "578ee6bc773bb62edea8485cdc4d0e0c5068e803",
@@ -281,7 +278,7 @@
       "plazo": "2022-11-16",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "74d4b34360b0995c1b1aad86ade61a3edb1d019a",
@@ -291,7 +288,7 @@
       "plazo": "2021-09-17",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "9f68ac401afac9c3ca1595bb1da9354ba18c320e",
@@ -301,7 +298,7 @@
       "plazo": "2023-05-08",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "2ecfa6965b077659749fccb9b4eceebf1e584122",
@@ -311,7 +308,7 @@
       "plazo": "2023-02-27",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "059584540923aebeb33cafe413675df555bbe3b0",
@@ -321,7 +318,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "1d7dc204904832598e61cdb18519f361f1caab01",
@@ -331,7 +328,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "e8889912c9e388adf4b184a91861baa67ad165ad",
@@ -341,7 +338,7 @@
       "plazo": "2024-11-15",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "455a9b47f8032be41f2f4e4a5558f0b054de890e",
@@ -351,7 +348,7 @@
       "plazo": "2024-11-15",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "7f9109d8953612108176528501156d412cedc2d2",
@@ -361,7 +358,7 @@
       "plazo": "2024-11-15",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "cd4bdcac37b0364fa467f6ae8ed9a4a0c85ccd23",
@@ -371,7 +368,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "32e55af25d6e824614c38c8933682c7dc6cf93af",
@@ -381,7 +378,7 @@
       "plazo": "2026-11-26",
       "estado_plazo": "caducado",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "20dc267d80fbe456e697b8032fbda09358363e87",
@@ -391,7 +388,7 @@
       "plazo": "2026-12-16",
       "estado_plazo": "abierto",
       "grupo": "A1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "a4b2e413138fa680dbcf3cfe6a48ddb74af31f74",
@@ -401,7 +398,7 @@
       "plazo": "2026-12-18",
       "estado_plazo": "abierto",
       "grupo": "C1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "cb1d8a5bf7bacc68ffcc1433e8d56396cebaa947",
@@ -411,7 +408,7 @@
       "plazo": "2026-12-09",
       "estado_plazo": "abierto",
       "grupo": null,
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "3be785815457d09033b45390e58ef3c80e1d2dbe",
@@ -471,7 +468,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "35f62e2fcb4c14ac83f4fbae8a45083f843637e6",
@@ -481,7 +478,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "122c87c1b4f7f42f2bfcdb8457635cdbb9ed59ad",
@@ -491,7 +488,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A1",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "6888ed0af0b8d92cfae0661314fc972a93255a50",
@@ -501,7 +498,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A2",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "a4d2e81b5093da4732201dafd6ea974dae223ba9",
@@ -511,7 +508,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A2",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "de4478519a8a9f056999b64785895832040910fa",
@@ -521,7 +518,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A2",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "eb47d8b909f036edc622b27e713cc109ad06e79d",
@@ -531,7 +528,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A2",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "9093ab660601cdf9b02a1ca0b3324dad30770fe0",
@@ -541,7 +538,7 @@
       "plazo": null,
       "estado_plazo": "sin_fecha",
       "grupo": "A2",
-      "comprobado": "2026-11-26"
+      "comprobado": "2026-11-27"
     },
     {
       "id": "9f91865e3b1858bd5ec9dec95290af026b73e132",
