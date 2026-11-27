@@ -7,7 +7,7 @@ X-WR-CALNAME:Plazos de empleo público
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
 UID:82d40da9fe6243dde298@empleo.local
-DTSTAMP:20261127T001057Z
+DTSTAMP:20261127T133825Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Plazo: Convocatoria T. E. Informatica 2026
@@ -27,8 +27,29 @@ DESCRIPTION:Último día: Convocatoria T. E. Informatica 2026
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:7781fbd342d4e6d5324f@empleo.local
+DTSTAMP:20261127T133825Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Plazo: Convocatoria T. E. Informatica 2026
+DESCRIPTION:Plazo · SACYL · Técnico/a Especialista en Informática (C1) 
+ · Burgos · https://www.saludcastillayleon.es/profesionales/es/recursos-h
+ umanos/convocatorias-especificas/tecnico-especialista-informatica/burgos.f
+ icheros/3468645-Convocatoria%20T.%20E.%20Informatica%202026.pdf
+URL:https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/con
+ vocatorias-especificas/tecnico-especialista-informatica/burgos.ficheros/34
+ 68645-Convocatoria%20T.%20E.%20Informatica%202026.pdf
+CATEGORIES:Empleo público
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Último día: Convocatoria T. E. Informatica 2026
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:cb1d8a5bf7bacc68ffcc@empleo.local
-DTSTAMP:20261127T001057Z
+DTSTAMP:20261127T133825Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Plazo: Resolución de 11 de noviembre de 2026\, del Instituto Nacio
@@ -53,7 +74,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20dc267d80fbe456e697@empleo.local
-DTSTAMP:20261127T001057Z
+DTSTAMP:20261127T133825Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Plazo: Técnico-a Superior en Informática (2025)
@@ -72,7 +93,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a4b2e413138fa680dbcf@empleo.local
-DTSTAMP:20261127T001057Z
+DTSTAMP:20261127T133825Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Plazo: Técnico-a de Soporte Informático (2025)
