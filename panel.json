@@ -1,6 +1,6 @@
 {
-  "generado": "2026-11-28T01:13:19",
-  "ultima_pasada": "2026-11-28T01:13:12",
+  "generado": "2026-11-28T09:02:30",
+  "ultima_pasada": "2026-11-28T09:02:30",
   "fuentes_ok": [
     "Junta de CyL · Convocatorias",
     "Junta de CyL · Empleo Temporal y bolsas",
@@ -14,7 +14,6 @@
     "León · Boletín Oficial de la Provincia",
     "Salamanca · Ayuntamiento · Oferta de empleo público",
     "Zamora · Diputación · Empleo",
-    "Ávila · Ayuntamiento · Recursos Humanos",
     "Ávila · Diputación · Oferta de empleo público",
     "Segovia · Diputación · Ofertas de empleo público",
     "Palencia · Diputación · Empleo",
@@ -28,7 +27,9 @@
     "SACYL · Técnico/a Especialista en Informática (C1)",
     "SACYL · Técnico/a Especialista en Informática (C1) · Burgos"
   ],
-  "fuentes_error": [],
+  "fuentes_error": [
+    "Ávila · Ayuntamiento · Recursos Humanos"
+  ],
   "total_fichas": 61,
   "items": [
     {
